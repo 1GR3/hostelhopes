@@ -19,5 +19,13 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: "gatsby-plugin-svgr",
+      options: {
+        svgoConfig: {
+          plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+        },
+      },
+    },
   ],
 };
