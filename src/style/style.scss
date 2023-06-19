@@ -6,6 +6,15 @@
 
 body {
   background: #27a7b8;
+  background: linear-gradient(
+    180deg,
+    #27a7b8 0%,
+    #27a7b8 20%,
+    #fff 30%,
+    #fff 60%,
+    #111 80%,
+    #111 100%
+  );
   font-family: "Lexend Deca", sans-serif;
 }
 h1,
