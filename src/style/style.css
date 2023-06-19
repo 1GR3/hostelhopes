@@ -9218,6 +9218,7 @@ textarea.form-control-lg {
   }
 }
 body {
+  background: #27a7b8;
   font-family: "Lexend Deca", sans-serif;
 }
 
@@ -9228,9 +9229,19 @@ h2,
   font-weight: 700;
   font-size: 72px;
   line-height: 80px;
-  /* or 111% */
   text-align: center;
   letter-spacing: -0.06em;
+}
+
+header {
+  padding: 60px 0 0 0;
+}
+header .qr-code {
+  margin: -10px -15px 0 0;
+}
+
+section {
+  height: 100vh;
 }
 
 .phone {
