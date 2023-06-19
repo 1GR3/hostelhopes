@@ -1,1 +1,29 @@
-@import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css";
+//@import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+@import "./_bootstrap.scss";
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+h1,
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+  /* or 111% */
+  text-align: center;
+  letter-spacing: -0.06em;
+}
+
+.phone {
+  width: 390px;
+  height: 845px;
+  margin: auto;
+  background: white;
+  border: 9px solid $indigo;
+  //filter: drop-shadow(2px 4px 15px rgba(74, 87, 120, 0.2));
+  border-radius: 40px;
+}
