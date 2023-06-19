@@ -60,6 +60,12 @@ header {
 }
 section {
   height: 100vh;
+  &.light {
+    color: $indigo;
+  }
+  &.dark {
+    color: white;
+  }
   p.lead {
     color: $secondary;
   }
