@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -9231,6 +9231,29 @@ h2,
   line-height: 80px;
   text-align: center;
   letter-spacing: -0.06em;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  padding: 15px 35px;
+  box-shadow: 2px 4px 15px rgba(74, 87, 120, 0.2);
+  border-radius: 30px;
+}
+.btn.btn-light {
+  color: #2e2e51;
+}
+.btn.btn-success, .btn.btn-danger {
+  color: white;
+  border-color: transparent;
+}
+.btn.btn-success {
+  background: linear-gradient(258.72deg, #00d7a3 0%, #00c5ad 100%);
+}
+.btn.btn-danger {
+  background: linear-gradient(258.72deg, #ff716b 0%, #f8306c 100%);
 }
 
 header {

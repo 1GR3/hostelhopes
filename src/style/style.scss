@@ -1,6 +1,6 @@
 //@import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css";
 
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
 
 @import "./_bootstrap.scss";
 
@@ -16,6 +16,29 @@ h2 {
   line-height: 80px;
   text-align: center;
   letter-spacing: -0.06em;
+}
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  padding: 15px 35px;
+  box-shadow: 2px 4px 15px rgba(74, 87, 120, 0.2);
+  border-radius: 30px;
+  &.btn-light {
+    color: $indigo;
+  }
+  &.btn-success,
+  &.btn-danger {
+    color: white;
+    border-color: transparent;
+  }
+  &.btn-success {
+    background: linear-gradient(258.72deg, #00d7a3 0%, #00c5ad 100%);
+  }
+  &.btn-danger {
+    background: linear-gradient(258.72deg, #ff716b 0%, #f8306c 100%);
+  }
 }
 header {
   padding: 60px 0 0 0;
