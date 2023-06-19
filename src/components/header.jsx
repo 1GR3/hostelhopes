@@ -1,15 +1,19 @@
 import * as React from "react";
-// import Logo from "./logo.svg";
+import { ReactComponent as Logo } from "./logo.svg";
+import { ReactComponent as QRcode } from "./QRcode.svg";
 
 function Header() {
   return (
-    <div className="row">
-      <div className="logo">
-        {/* <Logo fill="yellow" /> */}
-        logo
+    <header className="container sticky-top">
+      <div className="row">
+        <div className="col text-start">
+          <Logo fill="red" />
+        </div>
+        <div className="col text-end ">
+          <QRcode className="qr-code" />
+        </div>
       </div>
-      <div className="qrcode">QR code</div>
-    </div>
+    </header>
   );
 }
 export default Header;
