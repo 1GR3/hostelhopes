@@ -9310,13 +9310,13 @@ section.bg-map {
   background-size: cover;
 }
 
-p.contact {
+p.connect {
   max-width: 912px;
   margin: 0 auto 45px;
   letter-spacing: -0.04em;
 }
 
-.influencer p.contact {
+.influencer p.connect {
   max-width: 780px;
   color: #9393aa;
 }
