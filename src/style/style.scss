@@ -88,9 +88,19 @@ section {
   height: 100vh;
   &.light {
     color: $indigo;
+    .form-control,
+    .form-select {
+      color: $indigo;
+      border-color: $indigo;
+    }
   }
   &.dark {
     color: white;
+    .form-control,
+    .form-select {
+      color: white;
+      border-color: white;
+    }
   }
   p.lead {
     color: $secondary;
@@ -98,6 +108,47 @@ section {
   &.bg-map {
     background-image: url(../images/map.svg);
     background-size: cover;
+  }
+}
+p.contact {
+  max-width: 912px;
+  margin: 0 auto 45px;
+  letter-spacing: -0.04em;
+}
+.influencer {
+  p.contact {
+    max-width: 780px;
+    color: $secondary;
+  }
+}
+
+form.contact {
+  max-width: 690px;
+  margin: auto;
+  .row > * {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .form-control,
+  .form-select {
+    background: transparent;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 30px;
+    height: 60px;
+    font-size: 16px;
+    padding: 20px 30px;
+  }
+  textarea.form-control {
+    height: auto;
+    resize: none;
+  }
+  select.form-select {
+    padding: 15px 30px;
+
+    &:invalid {
+      color: $input-placeholder-color;
+    }
   }
 }
 .phone {
