@@ -9239,6 +9239,14 @@ h1, .h1 {
   margin-bottom: 45px;
 }
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: left center;
+  }
+  100% {
+    background-position: right center;
+  }
+}
 .btn {
   font-weight: 700;
   font-size: 16px;
@@ -9251,15 +9259,21 @@ h1, .h1 {
 .btn.btn-light {
   color: #2e2e51;
 }
+.btn.btn-success {
+  background: linear-gradient(258.72deg, #00d7a3 0%, #00c5ad 50%, #00d7a3 100%);
+}
+.btn.btn-danger {
+  background: linear-gradient(258.72deg, #ff716b 0%, #f8306c 50%, #ff716b 100%);
+}
 .btn.btn-success, .btn.btn-danger {
   color: white;
   border-color: transparent;
+  background-size: 200% auto;
+  background-position: right center;
+  transition: background-position 0.3s ease;
 }
-.btn.btn-success {
-  background: linear-gradient(258.72deg, #00d7a3 0%, #00c5ad 100%);
-}
-.btn.btn-danger {
-  background: linear-gradient(258.72deg, #ff716b 0%, #f8306c 100%);
+.btn.btn-success:hover, .btn.btn-danger:hover {
+  background-position: left center;
 }
 
 header {
@@ -9280,6 +9294,10 @@ section.dark {
 }
 section p.lead {
   color: #9393aa;
+}
+section.bg-map {
+  background-image: url(../images/map.svg);
+  background-size: cover;
 }
 
 .phone {

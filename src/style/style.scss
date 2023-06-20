@@ -30,6 +30,14 @@ h2 {
 h1 {
   margin-bottom: 45px;
 }
+@keyframes gradientAnimation {
+  0% {
+    background-position: left center;
+  }
+  100% {
+    background-position: right center;
+  }
+}
 .btn {
   font-weight: 700;
   font-size: 16px;
@@ -41,18 +49,35 @@ h1 {
   &.btn-light {
     color: $indigo;
   }
+  &.btn-success {
+    background: linear-gradient(
+      258.72deg,
+      #00d7a3 0%,
+      #00c5ad 50%,
+      #00d7a3 100%
+    );
+  }
+  &.btn-danger {
+    background: linear-gradient(
+      258.72deg,
+      #ff716b 0%,
+      #f8306c 50%,
+      #ff716b 100%
+    );
+  }
   &.btn-success,
   &.btn-danger {
     color: white;
     border-color: transparent;
-  }
-  &.btn-success {
-    background: linear-gradient(258.72deg, #00d7a3 0%, #00c5ad 100%);
-  }
-  &.btn-danger {
-    background: linear-gradient(258.72deg, #ff716b 0%, #f8306c 100%);
+    background-size: 200% auto;
+    background-position: right center;
+    transition: background-position 0.3s ease;
+    &:hover {
+      background-position: left center;
+    }
   }
 }
+
 header {
   padding: 60px 0 0 0;
   .qr-code {
@@ -69,6 +94,10 @@ section {
   }
   p.lead {
     color: $secondary;
+  }
+  &.bg-map {
+    background-image: url(../images/map.svg);
+    background-size: cover;
   }
 }
 .phone {
