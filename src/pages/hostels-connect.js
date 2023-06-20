@@ -4,13 +4,13 @@ import ConnectForm from "../components/connect-form";
 
 export default function HostelsConnect() {
   return (
-    <div className="bg-dark">
+    <div className="bg-dark hostel">
       <Header />
-      <section className="container text-center dark">
+      <section className="container text-center dark h-auto">
         <h1>
           Own a hostel? <br /> We can help you grow.
         </h1>
-        <p>
+        <p className="connect">
           If you are a Hostel Owner looking to join the Hostel Hop platform,
           send us a message telling us a bit about your hostel, if you are using
           a channel manager, which one, where it is located and how you heard
