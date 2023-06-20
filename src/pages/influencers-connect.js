@@ -4,19 +4,19 @@ import ConnectForm from "../components/connect-form";
 
 export default function InfluencersConnect() {
   return (
-    <div className="bg-white">
+    <div className="bg-white influencer">
       <Header />
-      <section className="container text-center light">
+      <section className="container text-center light h-auto">
         <h1>
           The freedom to travel <br />
           in the palm of your hand!
         </h1>
-        <p>
+        <p className="connect">
           Are you an influencer looking to make a passive income sharing your
           travels? Send us a message below including your social media accounts
           and contact information and we will reach out to you soon!
         </p>
-        <ConnectForm hostel={true} />
+        <ConnectForm hostel={false} />
       </section>
     </div>
   );
