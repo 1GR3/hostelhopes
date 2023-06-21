@@ -27,18 +27,13 @@ const ConnectForm = ({ hostel }) => {
             I’m most well known on...
           </option>
           <option value="facebook">Facebook</option>
-          <option value="twitter">Twitter</option>
-          <option value="instagram">Instagram</option>
-          <option value="linkedin">LinkedIn</option>
           <option value="youtube">YouTube</option>
-          <option value="pinterest">Pinterest</option>
-          <option value="snapchat">Snapchat</option>
+          <option value="instagram">Instagram</option>
           <option value="tiktok">TikTok</option>
+          <option value="snapchat">Snapchat</option>
+          <option value="pinterest">Pinterest</option>
           <option value="reddit">Reddit</option>
-          <option value="tumblr">Tumblr</option>
-          <option value="discord">Discord</option>
-          <option value="whatsapp">WhatsApp</option>
-          <option value="telegram">Telegram</option>
+          <option value="twitter">Twitter</option>
         </select>
       </div>
       <div className="col-12 col-md-6 mb-3">
