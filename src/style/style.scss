@@ -1,21 +1,22 @@
 //@import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css";
 
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&family=Outfit:wght@300&display=swap");
 
 @import "./_bootstrap.scss";
 
 body {
   font-size: 22px;
-  background: #27a7b8;
-  background: linear-gradient(
-    180deg,
-    #27a7b8 0%,
-    #27a7b8 20%,
-    #fff 30%,
-    #fff 60%,
-    #111 80%,
-    #111 100%
-  );
+  position: relative;
+  // background: #27a7b8;
+  // background: linear-gradient(
+  //   180deg,
+  //   #27a7b8 0%,
+  //   #27a7b8 20%,
+  //   #fff 30%,
+  //   #fff 60%,
+  //   #111 80%,
+  //   #111 100%
+  // );
   font-family: "Lexend Deca", sans-serif;
 }
 
@@ -25,10 +26,12 @@ h2 {
   font-weight: 700;
   font-size: 28px;
   line-height: 120%;
-
+  color: $indigo;
   text-align: center;
   letter-spacing: -0.06em;
+  margin-top: 30px;
   @include media-breakpoint-up(md) {
+    margin-top: 5px;
     font-size: 72px;
     line-height: 80px;
   }
@@ -37,7 +40,6 @@ h1 {
   margin-bottom: 45px;
   font-size: 36px;
 }
-
 .btn {
   font-weight: 700;
   font-size: 15px;
@@ -81,15 +83,31 @@ h1 {
     }
   }
 }
-
+main {
+  z-index: 1;
+  position: relative;
+}
 header {
   padding: 60px 0 0 0;
+  svg {
+    transition: fill 0.5s ease;
+    transform: scale(66%);
+    @include media-breakpoint-up(md) {
+      transform: scale(100%);
+    }
+  }
   .qr-code {
     margin: -10px -15px 0 0;
   }
 }
+.hero {
+  max-width: 350px;
+  @include media-breakpoint-up(md) {
+    max-width: 980px;
+  }
+}
 section {
-  height: 100vh;
+  min-height: 100vh;
   &.light {
     color: $indigo;
     .form-control,
@@ -100,6 +118,9 @@ section {
   }
   &.dark {
     color: white;
+    h1 {
+      color: white;
+    }
     .form-control,
     .form-select {
       color: white;
@@ -107,7 +128,20 @@ section {
     }
   }
   p.lead {
-    color: $secondary;
+    font-family: "Outfit", sans-serif;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 150%;
+    @include media-breakpoint-up(md) {
+      color: $secondary;
+      font-family: "Lexend Deca";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 36px;
+    }
   }
   &.bg-map {
     background-image: url(../images/map.svg);
