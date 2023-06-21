@@ -11,6 +11,17 @@ $secondary: #9393aa;
 $input-placeholder-color: $secondary;
 $spacer: 20px; // Default: 1rem
 
+$grid-breakpoints: (
+  xs: 0,
+  xsm: 362px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1620px,
+);
+
 // 3. Include remainder of required Bootstrap stylesheets
 
 @import "../../node_modules/bootstrap/scss/variables";
@@ -35,3 +46,9 @@ $spacer: 20px; // Default: 1rem
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
 // 5. Add additional custom code here
+
+@include media-breakpoint-up(xxxl) {
+  .container {
+    max-width: 1620px;
+  }
+}
