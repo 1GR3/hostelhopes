@@ -18,7 +18,11 @@ const ConnectForm = ({ hostel }) => {
     // Content for influencer
     <div className="row">
       <div className="col-12 col-md-6 mb-3">
-        <select class="form-select" aria-label="Select social network" required>
+        <select
+          className="form-select"
+          aria-label="Select social network"
+          required
+        >
           <option value="" disabled selected>
             I’m most well known on...
           </option>
