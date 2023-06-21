@@ -5,8 +5,8 @@ import ConnectForm from "../components/connect-form";
 export default function InfluencersConnect() {
   return (
     <div className="bg-white influencer">
-      <Header />
-      <section className="container text-center light h-auto">
+      <section className="container text-center light">
+        <Header light={true} />
         <h1>
           The freedom to travel <br />
           in the palm of your hand!

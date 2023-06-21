@@ -5,8 +5,8 @@ import ConnectForm from "../components/connect-form";
 export default function HostelsConnect() {
   return (
     <div className="bg-dark hostel">
-      <Header />
-      <section className="container text-center dark h-auto">
+      <section className="container text-center dark">
+        <Header light={false} />
         <h1>
           Own a hostel? <br /> We can help you grow.
         </h1>
