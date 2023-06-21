@@ -2,13 +2,22 @@ import * as React from "react";
 import Header from "../components/header";
 import Phone from "../components/phone";
 import Background from "../components/background";
+import { useScroll, animated } from "@react-spring/web";
 import "../style/style.css";
 
 const IndexPage = () => {
+  const { scrollYProgress } = useScroll();
+
   return (
     <>
       <main>
         <Header sticky />
+        <animated.div
+          className="position-fixed"
+          style={{ opacity: scrollYProgress }}
+        >
+          Scroll opacity
+        </animated.div>
         <section className="container text-center">
           <div className="hero m-auto">
             <h1 className="text-white">
@@ -19,7 +28,7 @@ const IndexPage = () => {
             </a>
           </div>
         </section>
-        <section className="container">
+        <section className="container d-flex align-items-center">
           <div className="row d-block d-md-none">
             <div className="col text-center">
               <h2>Earn points. Hop more.</h2>
@@ -48,7 +57,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="container">
+        <section className="container d-flex align-items-center">
           <div className="row d-block d-md-none">
             <div className="col text-center">
               <h2>Save trips. Share maps.</h2>
@@ -83,7 +92,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="container">
+        <section className="container d-flex align-items-center">
           <div className="row d-block d-md-none">
             <div className="col text-center">
               <h2>Own a hostel? Get listed.</h2>
@@ -118,9 +127,9 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <Phone state="0" />
       </main>
-      <Background state="4" />
+      <Phone state="0" />
+      <Background state="0" />
     </>
   );
 };
