@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function Phone() {
-  return <div className="phone">phone</div>;
-}
+const Phone = ({ state }) => {
+  return <div className={"phone state" + state}></div>;
+};
 export default Phone;
