@@ -11143,6 +11143,11 @@ section {
 section.light {
   color: #2e2e51;
 }
+section.light h1, section.light .h1,
+section.light h2,
+section.light .h2 {
+  color: #2e2e51;
+}
 section.light .form-control,
 section.light .form-select {
   color: #2e2e51;
@@ -11151,7 +11156,9 @@ section.light .form-select {
 section.dark {
   color: white;
 }
-section.dark h1, section.dark .h1 {
+section.dark h1, section.dark .h1,
+section.dark h2,
+section.dark .h2 {
   color: white;
 }
 section.dark .form-control,
@@ -11277,6 +11284,7 @@ form.contact select.form-select:invalid {
 }
 .background .background-image.forest {
   background-image: url("../images/forest-repeat.jpg");
+  box-shadow: inset 0 10px 5px 5px white;
 }
 
 /*# sourceMappingURL=style.css.map */

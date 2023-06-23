@@ -124,6 +124,10 @@ section {
   // border: 1px solid magenta;
   &.light {
     color: $indigo;
+    h1,
+    h2 {
+      color: $indigo;
+    }
     .form-control,
     .form-select {
       color: $indigo;
@@ -132,7 +136,8 @@ section {
   }
   &.dark {
     color: white;
-    h1 {
+    h1,
+    h2 {
       color: white;
     }
     .form-control,
@@ -262,6 +267,7 @@ form.contact {
     }
     &.forest {
       background-image: url("../images/forest-repeat.jpg");
+      box-shadow: inset 0 10px 5px 5px white;
     }
   }
 }
