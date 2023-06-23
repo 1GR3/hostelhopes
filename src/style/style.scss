@@ -214,6 +214,7 @@ form.contact {
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
   .phone {
     width: 390px;
     height: 823px;

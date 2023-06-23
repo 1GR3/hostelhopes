@@ -11235,6 +11235,7 @@ form.contact select.form-select:invalid {
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
 }
 .phone-holder .phone {
   width: 390px;
