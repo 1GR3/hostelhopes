@@ -11111,6 +11111,15 @@ main.bg-map {
   background-size: cover;
   background-position: center center;
 }
+main.bg-hero {
+  background-color: #2e2e51;
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+main.bg-hero p.lead {
+  color: white;
+}
 
 header {
   padding: 60px 0 0 0;
