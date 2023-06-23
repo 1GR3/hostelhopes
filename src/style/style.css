@@ -11238,21 +11238,22 @@ form.contact select.form-select:invalid {
   pointer-events: none;
 }
 .phone-holder .phone {
-  width: 390px;
-  height: 823px;
   margin: auto;
   background: white;
-  border: 9px solid #2e2e51;
+  padding: 9px;
   filter: drop-shadow(2px 4px 15px rgba(74, 87, 120, 0.2));
-  border-radius: 40px;
+  border-radius: 49px;
   position: absolute;
 }
-.phone-holder .phone.state0 {
+.phone-holder .phone .screen {
+  width: 390px;
+  height: 823px;
+  border: 9px solid transparent;
+  border-radius: 40px;
   background-image: url("../images/phone1.png");
   background-repeat: no-repeat;
   background-position: 50% 19%;
   background-size: 142%;
-  transform: scale(141%) translate(-35%, 90%);
 }
 .phone-holder .phone.state1 {
   background-image: url("../images/phone1.png");
