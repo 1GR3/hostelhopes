@@ -48,7 +48,10 @@ const Phone = ({ scrollYProgress }) => {
         className={"phone state0"}
         style={{ ...phoneProps, ...gradientSpringProps }}
       >
-        <animated.div className="screen" style={screenProps}></animated.div>
+        <animated.div className="screen" style={screenProps}>
+          <div className="dynamic-island"></div>
+          <div className="home-button"></div>
+        </animated.div>
       </animated.div>
     </div>
   );

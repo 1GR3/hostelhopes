@@ -246,6 +246,27 @@ form.contact {
       background-repeat: no-repeat;
       background-position: 7.5% 19%;
       background-size: 450%;
+      position: relative;
+      .dynamic-island {
+        position: absolute;
+        width: 126px;
+        height: 37px;
+        left: 132px;
+        top: 10px;
+
+        background: black;
+        border-radius: 19px;
+      }
+      .home-button {
+        position: absolute;
+        width: 135px;
+        height: 5px;
+        left: 127px;
+        bottom: 8px;
+
+        background: black;
+        border-radius: 3px;
+      }
     }
     &.state1 {
       background-image: url("../images/phone1.png");
