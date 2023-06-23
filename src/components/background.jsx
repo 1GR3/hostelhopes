@@ -22,7 +22,7 @@ const Background = ({ scrollYProgress }) => {
   const topHero = scrollYProgress.to([0.05, 0.3], ["0%", "-50%"]);
 
   const blurForest = scrollYProgress.to([0.55, 0.75], [0, 15]);
-  const opacityForest = scrollYProgress.to([0.65, 0.75], [1, 0]);
+  const opacityForest = scrollYProgress.to([0.75, 0.82], [1, 0]);
   const topForest = scrollYProgress.to([0.3, 0.7], ["90%", "-50%"]);
 
   const backgroundSpringProps = useSpring({
