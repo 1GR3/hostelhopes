@@ -11,7 +11,7 @@ const IndexPage = () => {
   return (
     <>
       <main>
-        <Header sticky />
+        <Header landingpage scrollYProgress={scrollYProgress} />
         <animated.div
           className="position-fixed"
           style={{ opacity: scrollYProgress }}
