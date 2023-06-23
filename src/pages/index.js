@@ -28,7 +28,7 @@ const IndexPage = () => {
             </a>
           </div>
         </section>
-        <section className="container d-flex align-items-center">
+        <section className="container d-flex align-items-center light">
           <div className="row d-block d-md-none">
             <div className="col text-center">
               <h2>Earn points. Hop more.</h2>
@@ -57,7 +57,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="container d-flex align-items-center">
+        <section className="container d-flex align-items-center dark">
           <div className="row d-block d-md-none">
             <div className="col text-center">
               <h2>Save trips. Share maps.</h2>
@@ -92,7 +92,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="container d-flex align-items-center">
+        <section className="container d-flex align-items-center dark">
           <div className="row d-block d-md-none">
             <div className="col text-center">
               <h2>Own a hostel? Get listed.</h2>
@@ -128,8 +128,10 @@ const IndexPage = () => {
           </div>
         </section>
       </main>
-      <Phone state="0" />
-      <Background state="0" />
+      <Phone scrollYProgress={scrollYProgress} />
+      <animated.div>
+        <Background scrollYProgress={scrollYProgress} />
+      </animated.div>
     </>
   );
 };
