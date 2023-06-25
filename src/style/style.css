@@ -11105,12 +11105,6 @@ main {
   z-index: 1;
   position: relative;
 }
-main.bg-map {
-  background-color: #2e2e51;
-  background-image: url(../images/map.svg);
-  background-size: cover;
-  background-position: center center;
-}
 main.bg-hero {
   background-color: #2e2e51;
   background-image: url(../images/hero.jpg);
@@ -11281,12 +11275,6 @@ form.contact select.form-select:invalid {
   bottom: 8px;
   background: black;
   border-radius: 3px;
-}
-.phone-holder .phone.state1 {
-  background-image: url("../images/phone1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
 }
 
 .background {
