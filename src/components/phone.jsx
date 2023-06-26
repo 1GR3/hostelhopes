@@ -9,7 +9,7 @@ const Phone = ({ scrollYProgress }) => {
   );
   const gradientSpringProps = useSpring({
     background: scrollYProgress.to(
-      [0, 0.5, 0.65],
+      [0.52, 0.7, 0.75],
       [
         "linear-gradient(180deg, #2e2e51 0%, #2e2e51 100%, #fff 100%, #fff 100%)",
         "linear-gradient(180deg, #2e2e51 0%, #2e2e51 0%, #fff 100%, #fff 100%)",
