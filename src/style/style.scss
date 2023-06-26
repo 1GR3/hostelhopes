@@ -103,7 +103,7 @@ h1 {
     border-color: transparent;
     background-size: 200% auto;
     background-position: right center;
-    transition: background-position 0.3s ease;
+    transition: background-position 0.5s ease;
     &:hover {
       background-position: left center;
     }
@@ -226,9 +226,9 @@ form.contact {
     }
   }
 }
+
 .phone-holder {
   position: fixed;
-  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -237,6 +237,33 @@ form.contact {
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  top: 30%;
+  transform: scale(0.7);
+  transition: transform 0.3s;
+  @include media-breakpoint-up(sm) {
+    top: 0;
+    transform: scale(0.75);
+  }
+  @include media-breakpoint-up(md) {
+    top: 0;
+    transform: scale(0.8);
+  }
+  @include media-breakpoint-up(lg) {
+    top: 0;
+    transform: scale(0.85);
+  }
+  @include media-breakpoint-up(xl) {
+    top: 0;
+    transform: scale(0.9);
+  }
+  @include media-breakpoint-up(xxl) {
+    top: 0;
+    transform: scale(0.95);
+  }
+  @include media-breakpoint-up(xxxl) {
+    top: 0;
+    transform: scale(1);
+  }
   .phone {
     margin: auto;
     background: white;
@@ -244,10 +271,6 @@ form.contact {
     filter: drop-shadow(2px 4px 15px rgba(74, 87, 120, 0.2));
     border-radius: 49px;
     position: absolute;
-    // bottom: 50%;
-    // left: 50%;
-    //transform: translate(-50%, 50%);
-    //transition: all 0.5s;
 
     .screen {
       width: 390px;

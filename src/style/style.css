@@ -11031,6 +11031,50 @@ body {
   position: relative;
   font-family: "Lexend Deca", sans-serif;
 }
+body:after {
+  content: "XS";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 4px;
+  background-color: rgba(244, 11, 0, 0.75);
+  color: white;
+  font-family: monospace;
+  font-size: 24px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+@media (min-width: 576px) {
+  body:after {
+    content: "SM";
+  }
+}
+@media (min-width: 768px) {
+  body:after {
+    content: "MD";
+  }
+}
+@media (min-width: 992px) {
+  body:after {
+    content: "LG";
+  }
+}
+@media (min-width: 1200px) {
+  body:after {
+    content: "XL";
+  }
+}
+@media (min-width: 1400px) {
+  body:after {
+    content: "xxl";
+  }
+}
+@media (min-width: 1620px) {
+  body:after {
+    content: "xxxl";
+  }
+}
 
 h1, .h1,
 h2,
@@ -11095,7 +11139,7 @@ h1, .h1 {
   border-color: transparent;
   background-size: 200% auto;
   background-position: right center;
-  transition: background-position 0.3s ease;
+  transition: background-position 0.5s ease;
 }
 .btn.btn-success:hover, .btn.btn-danger:hover {
   background-position: left center;
@@ -11230,7 +11274,6 @@ form.contact select.form-select:invalid {
 
 .phone-holder {
   position: fixed;
-  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -11239,6 +11282,45 @@ form.contact select.form-select:invalid {
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  top: 30%;
+  transform: scale(0.7);
+  transition: transform 0.3s;
+}
+@media (min-width: 576px) {
+  .phone-holder {
+    top: 0;
+    transform: scale(0.75);
+  }
+}
+@media (min-width: 768px) {
+  .phone-holder {
+    top: 0;
+    transform: scale(0.8);
+  }
+}
+@media (min-width: 992px) {
+  .phone-holder {
+    top: 0;
+    transform: scale(0.85);
+  }
+}
+@media (min-width: 1200px) {
+  .phone-holder {
+    top: 0;
+    transform: scale(0.9);
+  }
+}
+@media (min-width: 1400px) {
+  .phone-holder {
+    top: 0;
+    transform: scale(0.95);
+  }
+}
+@media (min-width: 1620px) {
+  .phone-holder {
+    top: 0;
+    transform: scale(1);
+  }
 }
 .phone-holder .phone {
   margin: auto;
