@@ -21,7 +21,7 @@ const Header = ({ landingpage, light = false, scrollYProgress }) => {
     );
   };
   return (
-    <header className={"container" + (landingpage ? " sticky-top" : "")}>
+    <header className={"container" + (landingpage ? " sticky-md-top" : "")}>
       <div className="row">
         <div className="col text-center text-md-start">
           <a href="/">
