@@ -11272,6 +11272,30 @@ form.contact select.form-select:invalid {
   color: #9393aa;
 }
 
+#mobile-buttons {
+  position: fixed;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+#mobile-buttons.inverted .btn-store {
+  background: #2e2e51;
+  color: white;
+  border-color: #2e2e51;
+}
+#mobile-buttons.inverted .btn-store svg {
+  fill: white;
+}
+#mobile-buttons .appleLogo {
+  margin-top: -7px;
+  margin-right: 10px;
+}
+#mobile-buttons .googlePlay {
+  width: 20px;
+  margin-right: 10px;
+}
+
 .phone-holder {
   position: fixed;
   bottom: 0;

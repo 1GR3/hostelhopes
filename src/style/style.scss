@@ -226,7 +226,32 @@ form.contact {
     }
   }
 }
-
+#mobile-buttons {
+  position: fixed;
+  //top: 0;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  &.inverted {
+    .btn-store {
+      background: $indigo;
+      color: white;
+      border-color: $indigo;
+      svg {
+        fill: white;
+      }
+    }
+  }
+  .appleLogo {
+    margin-top: -7px;
+    margin-right: 10px;
+  }
+  .googlePlay {
+    width: 20px;
+    margin-right: 10px;
+  }
+}
 .phone-holder {
   position: fixed;
   bottom: 0;

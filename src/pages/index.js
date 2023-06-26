@@ -2,6 +2,7 @@ import * as React from "react";
 import Header from "../components/header";
 import Phone from "../components/phone";
 import Background from "../components/background";
+import MobileButtons from "../components/mobile-buttons";
 import { useScroll, animated } from "@react-spring/web";
 import "../style/style.css";
 
@@ -128,6 +129,7 @@ const IndexPage = () => {
           </div>
         </section>
       </main>
+      <MobileButtons />
       <Phone scrollYProgress={scrollYProgress} />
       <animated.div>
         <Background scrollYProgress={scrollYProgress} />
