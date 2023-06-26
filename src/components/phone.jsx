@@ -9,7 +9,7 @@ const Phone = ({ scrollYProgress }) => {
   );
   const gradientSpringProps = useSpring({
     background: scrollYProgress.to(
-      [0, 0.45, 0.65],
+      [0, 0.5, 0.65],
       [
         "linear-gradient(180deg, #2e2e51 0%, #2e2e51 100%, #fff 100%, #fff 100%)",
         "linear-gradient(180deg, #2e2e51 0%, #2e2e51 0%, #fff 100%, #fff 100%)",
@@ -41,17 +41,24 @@ const Phone = ({ scrollYProgress }) => {
   });
 
   const phoneProps = useSpring({
-    transform: phoneSize.to((value) => `scale(${value}%)`),
-    bottom: phonePosition.to((value) => (value === "0" ? "unset" : value)),
+    transform: scrollYProgress.to(
+      [0, 0.14, 1],
+      [
+        "scale(142%) translateY(50%)",
+        "scale(100%) translateY(0%)",
+        "scale(100%) translateY(0%)",
+      ]
+    ),
     config: config.slow,
   });
+
   const islandProps = useSpring({
     opacity: islandOpacity,
   });
   return (
     <div className="phone-holder">
       <animated.div
-        className={"phone state0"}
+        className={"phone"}
         style={{ ...phoneProps, ...gradientSpringProps }}
       >
         <animated.div className="screen" style={screenProps}>
@@ -59,7 +66,6 @@ const Phone = ({ scrollYProgress }) => {
             className="dynamic-island"
             style={islandProps}
           ></animated.div>
-
           <div className="home-button" style={islandProps}></div>
         </animated.div>
       </animated.div>
