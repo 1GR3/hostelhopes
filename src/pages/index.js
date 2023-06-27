@@ -18,12 +18,6 @@ const IndexPage = () => {
       </Helmet>
       <main>
         <Header landingpage scrollYProgress={scrollYProgress} />
-        <animated.div
-          className="position-fixed"
-          style={{ opacity: scrollYProgress }}
-        >
-          Scroll opacity
-        </animated.div>
         <section className="container text-center">
           <div className="hero m-auto">
             <h1 className="text-white">
@@ -133,9 +127,8 @@ const IndexPage = () => {
       </main>
       <MobileButtons scrollYProgress={scrollYProgress} />
       <Phone scrollYProgress={scrollYProgress} />
-      <animated.div>
-        <Background scrollYProgress={scrollYProgress} />
-      </animated.div>
+
+      <Background scrollYProgress={scrollYProgress} />
     </>
   );
 };
