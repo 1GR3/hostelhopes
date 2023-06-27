@@ -4,7 +4,9 @@
 module.exports = {
   siteMetadata: {
     title: `hostelhop`,
-    siteUrl: `https://www.yourdomain.tld`,
+    description: `Just focus on the good bits of your next adventure.`,
+    image: `./images/hostelhop.png`,
+    siteUrl: `http://hostelhop.com/`,
   },
   plugins: [
     "gatsby-plugin-sass",

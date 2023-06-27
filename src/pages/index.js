@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import Header from "../components/header";
 import Phone from "../components/phone";
 import Background from "../components/background";
@@ -11,6 +12,10 @@ const IndexPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>hostelhop</title>
+        <meta name="description" content="hostelhop" />
+      </Helmet>
       <main>
         <Header landingpage scrollYProgress={scrollYProgress} />
         <animated.div
@@ -25,7 +30,7 @@ const IndexPage = () => {
               Just focus on the good bits of your next adventure.
             </h1>
             <a
-              className="btn btn-light d-none d-md-block"
+              className="btn btn-light d-none d-md-inline-block"
               href="/hostels-connect"
             >
               Own a hostel? We can help you grow.
