@@ -24,12 +24,15 @@ const IndexPage = () => {
             <h1 className="text-white">
               Just focus on the good bits of your next adventure.
             </h1>
-            <a className="btn btn-light" href="/hostels-connect">
+            <a
+              className="btn btn-light d-none d-md-block"
+              href="/hostels-connect"
+            >
               Own a hostel? We can help you grow.
             </a>
           </div>
         </section>
-        <section className="container d-flex align-items-center light">
+        <section className="container d-flex align-items-start align-items-md-center light">
           <div className="row d-block d-md-none">
             <div className="col text-center">
               <h2>Earn points. Hop more.</h2>
@@ -67,9 +70,6 @@ const IndexPage = () => {
                 your favorite hostels. Share your maps with other hostel hoppers
                 and with your followers on social media!
               </p>
-              <a className="btn btn-success" href="/influencers-connect">
-                Make passive income sharing your travels
-              </a>
             </div>
           </div>
           <div className="row d-none d-md-flex">
@@ -93,7 +93,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="container d-flex align-items-center dark">
+        <section className="container d-flex align-items-start align-items-md-center dark">
           <div className="row d-block d-md-none">
             <div className="col text-center">
               <h2>Own a hostel? Get listed.</h2>
@@ -102,9 +102,6 @@ const IndexPage = () => {
                 at your hostel. Hostel hop takes a lower deposit fee than hostel
                 world and booking.com
               </p>
-              <a className="btn btn-danger" href="/hostels-connect">
-                Own a hostel? We can help you grow!
-              </a>
             </div>
           </div>
           <div className="row d-none d-md-flex">
@@ -129,7 +126,7 @@ const IndexPage = () => {
           </div>
         </section>
       </main>
-      <MobileButtons />
+      <MobileButtons scrollYProgress={scrollYProgress} />
       <Phone scrollYProgress={scrollYProgress} />
       <animated.div>
         <Background scrollYProgress={scrollYProgress} />

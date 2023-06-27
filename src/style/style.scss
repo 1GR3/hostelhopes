@@ -71,12 +71,13 @@ h1 {
   font-size: 15px;
   line-height: 125%;
   letter-spacing: -0.04em;
-  padding: 15px 35px;
+  padding: 15px 10px;
   box-shadow: 2px 4px 15px rgba(74, 87, 120, 0.2);
   border-radius: 30px;
   @include media-breakpoint-up(md) {
     font-size: 16px;
     line-height: 24px;
+    padding: 15px 35px;
   }
   &.btn-light {
     color: $indigo;
@@ -250,6 +251,14 @@ form.contact {
   .googlePlay {
     width: 20px;
     margin-right: 10px;
+  }
+  .btn-slide {
+    position: absolute;
+    width: 100%;
+  }
+  .btn-store {
+    position: relative;
+    z-index: 5;
   }
 }
 .phone-holder {

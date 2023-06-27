@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ReactComponent as Apple } from "../images/apple.svg";
 import { ReactComponent as Play } from "../images/play.svg";
 import { useSpring, animated, config } from "@react-spring/web";
@@ -46,22 +46,55 @@ const MobileButtons = ({ scrollYProgress }) => {
 
   const isInverted = true;
 
+  const positionValues = ["0px", "65px", "65px", "130px"];
+  const opacityValues = [0, 1, 1, 0];
+
+  const hostel1props = useSpring({
+    bottom: scrollYProgress.to([0, 0.29, 0.3], ["65px", "65px", "130px"]),
+    opacity: scrollYProgress.to([0, 0.29, 0.3], [1, 1, 0]),
+    config: config.slow,
+  });
+
+  const influProps = useSpring({
+    bottom: scrollYProgress.to([0.7, 0.71, 0.86, 0.87], positionValues),
+    opacity: scrollYProgress.to([0.7, 0.71, 0.86, 0.87], opacityValues),
+    config: config.slow,
+  });
+
+  const hostel2props = useSpring({
+    bottom: scrollYProgress.to([0.89, 0.9, 1, 1], positionValues),
+    opacity: scrollYProgress.to([0.89, 0.9, 1, 1], opacityValues),
+    config: config.slow,
+  });
+
   return (
     <animated.div
       id="mobile-buttons"
       className={"d-flex d-md-none container " + (isInverted ? "inverted" : "")}
     >
       <div className="d-block justify-content-center w-100 align-content-end">
-        <div className="d-grid gap-3">
-          <a className="btn btn-light" href="/hostels-connect">
+        <div className="d-grid gap-3 position-relative">
+          <animated.a
+            className="btn btn-light btn-slide"
+            href="/hostels-connect"
+            style={hostel1props}
+          >
             Own a hostel? We can help you grow.
-          </a>
-          <a className="btn btn-success" href="/influencers-connect">
+          </animated.a>
+          <animated.a
+            className="btn btn-success btn-slide"
+            href="/influencers-connect"
+            style={influProps}
+          >
             Make passive income sharing your travels
-          </a>
-          <a className="btn btn-danger" href="/hostels-connect">
+          </animated.a>
+          <animated.a
+            className="btn btn-danger btn-slide"
+            href="/hostels-connect"
+            style={hostel2props}
+          >
             Own a hostel? We can help you grow!
-          </a>
+          </animated.a>
           {button}
         </div>
       </div>
