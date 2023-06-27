@@ -17,22 +17,13 @@ const Phone = ({ scrollYProgress }) => {
       ]
     ),
   });
-  const screenPositionX = scrollYProgress.interpolate(
+  const screenPositionX = scrollYProgress.to(
     [0, 0.14, 0.3, 0.59, 0.6, 0.89, 0.9, 1],
     ["7.5%", "0%", "0%", "0%", "50%", "50%", "100%", "100%"]
   );
-  const screenPositionY = scrollYProgress.interpolate(
-    [0, 0.14, 1],
-    ["20%", "0%", "0%"]
-  );
-  const screenSize = scrollYProgress.interpolate(
-    [0, 0.14, 1],
-    ["440%", "300%", "300%"]
-  );
-  const islandOpacity = scrollYProgress.interpolate(
-    [0, 0.13, 0.14, 1],
-    [0, 0, 1, 1]
-  );
+  const screenPositionY = scrollYProgress.to([0, 0.14, 1], ["20%", "0%", "0%"]);
+  const screenSize = scrollYProgress.to([0, 0.14, 1], ["440%", "300%", "300%"]);
+  const islandOpacity = scrollYProgress.to([0, 0.13, 0.14, 1], [0, 0, 1, 1]);
 
   const screenProps = useSpring({
     backgroundPositionX: screenPositionX,
