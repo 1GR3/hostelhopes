@@ -22,6 +22,18 @@ module.exports = {
       __key: "images",
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Hostel Hop",
+        short_name: "hostelhop",
+        start_url: "/",
+        background_color: "#27a7b8",
+        theme_color: "#2e2e51",
+        display: "standalone",
+        icon: "src/images/hostelhop.png",
+      },
+    },
+    {
       resolve: "gatsby-plugin-svgr",
       options: {
         svgoConfig: {
