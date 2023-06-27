@@ -125,8 +125,17 @@ main {
   }
 }
 header {
-  padding: 60px 0 0 0;
+  padding: 34px 0 0 0;
   pointer-events: none;
+  @include media-breakpoint-up(md) {
+    padding: 45px 0 0 0;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 50px 0 0 0;
+  }
+  @include media-breakpoint-up(xxxl) {
+    padding: 60px 0 0 0;
+  }
   a {
     pointer-events: auto;
   }
