@@ -29,6 +29,7 @@ const Phone = ({ scrollYProgress }) => {
     backgroundPositionX: screenPositionX,
     backgroundPositionY: screenPositionY,
     backgroundSize: screenSize,
+    willChange: "backgroundPositionX, backgroundPositionY, backgroundSize",
   });
 
   const phoneProps = useSpring({
@@ -41,15 +42,18 @@ const Phone = ({ scrollYProgress }) => {
       ]
     ),
     config: config.slow,
+    willChange: "transform",
   });
 
   const islandProps = useSpring({
     opacity: islandOpacity,
+    willChange: "opacity",
   });
+
   return (
     <div className="phone-holder">
       <animated.div
-        className={"phone"}
+        className="phone"
         style={{ ...phoneProps, ...gradientSpringProps }}
       >
         <animated.div className="screen" style={screenProps}>
