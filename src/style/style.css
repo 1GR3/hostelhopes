@@ -11169,11 +11169,11 @@ header a {
 }
 header svg {
   transition: fill 0.5s ease;
-  transform: scale(66%);
+  transform: scale(66%) translate3d(0, 0, 0);
 }
 @media (min-width: 768px) {
   header svg {
-    transform: scale(100%);
+    transform: scale(100%) translate3d(0, 0, 0);
   }
 }
 header .qr-code {
@@ -11431,7 +11431,12 @@ form.contact select.form-select:invalid {
   background-size: cover;
   background-position: center;
   z-index: 5;
-  transform: scale(105%);
+  transform: scale(110%) translate3d(0, 0, 0);
+}
+@media (min-width: 768px) {
+  .background .background-image {
+    transform: scale(105%) translate3d(0, 0, 0);
+  }
 }
 .background .background-image.hero-image {
   background-image: url("../images/hero.jpg");

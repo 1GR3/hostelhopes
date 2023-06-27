@@ -132,9 +132,10 @@ header {
   }
   svg {
     transition: fill 0.5s ease;
-    transform: scale(66%);
+    transform: scale(66%) translate3d(0, 0, 0);
+
     @include media-breakpoint-up(md) {
-      transform: scale(100%);
+      transform: scale(100%) translate3d(0, 0, 0);
     }
   }
   .qr-code {
@@ -371,13 +372,18 @@ form.contact {
     background-position: center;
     z-index: 5;
 
-    transform: scale(105%);
+    transform: scale(110%) translate3d(0, 0, 0);
+    @include media-breakpoint-up(md) {
+      transform: scale(105%) translate3d(0, 0, 0);
+    }
     &.hero-image {
       background-image: url("../images/hero.jpg");
+      //webkit-backface-visibility: hidden;
     }
     &.forest {
       background-image: url("../images/forest-repeat.jpg");
       box-shadow: inset 0 10px 5px 5px white;
+      //webkit-backface-visibility: hidden;
     }
   }
 }
