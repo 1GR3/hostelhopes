@@ -126,6 +126,10 @@ main {
 }
 header {
   padding: 60px 0 0 0;
+  pointer-events: none;
+  a {
+    pointer-events: auto;
+  }
   svg {
     transition: fill 0.5s ease;
     transform: scale(66%);
@@ -298,6 +302,19 @@ form.contact {
     top: 0;
     transform: scale(1);
   }
+  @media (max-height: 1024px) {
+    top: 15%;
+    transform: scale(0.9);
+  }
+  @media (max-height: 850px) {
+    top: 30%;
+    transform: scale(0.8);
+  }
+  @media (max-height: 750px) {
+    top: 45%;
+    transform: scale(0.7);
+  }
+
   .phone {
     margin: auto;
     background: white;

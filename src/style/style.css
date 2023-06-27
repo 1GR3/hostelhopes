@@ -11162,6 +11162,10 @@ main.bg-hero p.lead {
 
 header {
   padding: 60px 0 0 0;
+  pointer-events: none;
+}
+header a {
+  pointer-events: auto;
 }
 header svg {
   transition: fill 0.5s ease;
@@ -11353,6 +11357,24 @@ form.contact select.form-select:invalid {
   .phone-holder {
     top: 0;
     transform: scale(1);
+  }
+}
+@media (max-height: 1024px) {
+  .phone-holder {
+    top: 15%;
+    transform: scale(0.9);
+  }
+}
+@media (max-height: 850px) {
+  .phone-holder {
+    top: 30%;
+    transform: scale(0.8);
+  }
+}
+@media (max-height: 750px) {
+  .phone-holder {
+    top: 45%;
+    transform: scale(0.7);
   }
 }
 .phone-holder .phone {
