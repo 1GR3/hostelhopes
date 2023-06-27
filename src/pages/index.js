@@ -13,7 +13,7 @@ const IndexPage = () => {
   return (
     <>
       <Helmet>
-        <title>hostelhop</title>
+        <title>Hostel Hop</title>
         <meta name="description" content="hostelhop" />
       </Helmet>
       <main>

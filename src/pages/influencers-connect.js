@@ -7,7 +7,7 @@ export default function InfluencersConnect() {
   return (
     <>
       <Helmet>
-        <title>hostelhop | connect with us</title>
+        <title>Hostel Hop | connect with us</title>
         <meta name="description" content="hostelhop" />
       </Helmet>
       <div className="bg-white influencer">

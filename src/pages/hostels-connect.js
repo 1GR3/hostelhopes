@@ -7,7 +7,7 @@ export default function HostelsConnect() {
   return (
     <>
       <Helmet>
-        <title>hostelhop | connect your hostel</title>
+        <title>Hostel Hop | connect your hostel</title>
         <meta name="description" content="hostelhop" />
       </Helmet>
       <div className="bg-dark hostel">

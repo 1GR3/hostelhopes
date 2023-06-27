@@ -29,7 +29,7 @@ const NotFoundPage = () => {
   return (
     <>
       <Helmet>
-        <title>404 | hostelhop</title>
+        <title>404 | Hostel Hop</title>
         <meta name="description" content="hostelhop " />
       </Helmet>
       <main className=" text-center bg-hero">
