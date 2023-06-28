@@ -21,9 +21,9 @@ const Header = ({ landingpage, light = false, scrollYProgress }) => {
     );
   };
   return (
-    <header className={"container" + (landingpage ? " sticky-md-top" : "")}>
+    <header className={"container" + (landingpage ? " sticky-lg-top" : "")}>
       <div className="row">
-        <div className="col text-center text-md-start">
+        <div className="col text-center text-lg-start">
           <a href="/">
             {landingpage ? (
               <AnimatedLogo fill={interpolateGradient(gradientDefinition)} />
@@ -32,7 +32,7 @@ const Header = ({ landingpage, light = false, scrollYProgress }) => {
             )}
           </a>
         </div>
-        <div className="col text-end d-none d-md-block">
+        <div className="col text-end d-none d-lg-block">
           <QRcode className="qr-code" />
         </div>
       </div>
