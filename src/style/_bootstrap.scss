@@ -57,8 +57,8 @@ $gutters: (
 
 // 5. Add additional custom code here
 
-@include media-breakpoint-up(xxxl) {
-  .container {
+.container {
+  @include media-breakpoint-up(xxxl) {
     max-width: 1620px;
   }
 }
