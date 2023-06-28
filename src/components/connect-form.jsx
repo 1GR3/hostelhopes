@@ -49,7 +49,7 @@ const ConnectForm = ({ hostel }) => {
   );
 
   return (
-    <form className="contact">
+    <form className="connect">
       <div className="row">
         <div className="col-12 col-md-6 mb-3">
           <input

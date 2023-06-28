@@ -11429,21 +11429,22 @@ p.connect {
   }
 }
 
-form.contact {
+form.connect {
   padding: 0 10px;
+  padding-bottom: 300px;
 }
 @media (min-width: 768px) {
-  form.contact {
+  form.connect {
     max-width: 690px;
     margin: auto;
   }
 }
-form.contact .row > * {
+form.connect .row > * {
   padding-right: 10px;
   padding-left: 10px;
 }
-form.contact .form-control,
-form.contact .form-select {
+form.connect .form-control,
+form.connect .form-select {
   background: transparent;
   border-width: 1.5px;
   border-style: solid;
@@ -11452,14 +11453,14 @@ form.contact .form-select {
   font-size: 16px;
   padding: 20px 30px;
 }
-form.contact textarea.form-control {
+form.connect textarea.form-control {
   height: auto;
   resize: none;
 }
-form.contact select.form-select {
+form.connect select.form-select {
   padding: 15px 30px;
 }
-form.contact select.form-select:invalid {
+form.connect select.form-select:invalid {
   color: #9393aa;
 }
 
