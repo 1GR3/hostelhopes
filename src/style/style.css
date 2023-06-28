@@ -768,7 +768,7 @@ progress {
   --bs-breakpoint-lg: 992px;
   --bs-breakpoint-xl: 1200px;
   --bs-breakpoint-xxl: 1400px;
-  --bs-breakpoint-xxxl: 1620px;
+  --bs-breakpoint-xxxl: 1650px;
 }
 
 .row {
@@ -2011,7 +2011,7 @@ progress {
     --bs-gutter-y: 60px;
   }
 }
-@media (min-width: 1620px) {
+@media (min-width: 1650px) {
   .col-xxxl {
     flex: 1 0 0%;
   }
@@ -3381,7 +3381,7 @@ textarea.form-control-lg {
   --bs-breakpoint-lg: 992px;
   --bs-breakpoint-xl: 1200px;
   --bs-breakpoint-xxl: 1400px;
-  --bs-breakpoint-xxxl: 1620px;
+  --bs-breakpoint-xxxl: 1650px;
 }
 
 .row {
@@ -4624,7 +4624,7 @@ textarea.form-control-lg {
     --bs-gutter-y: 60px;
   }
 }
-@media (min-width: 1620px) {
+@media (min-width: 1650px) {
   .col-xxxl {
     flex: 1 0 0%;
   }
@@ -5083,7 +5083,7 @@ textarea.form-control-lg {
     z-index: 1020;
   }
 }
-@media (min-width: 1620px) {
+@media (min-width: 1650px) {
   .sticky-xxxl-top {
     position: sticky;
     top: 0;
@@ -10422,7 +10422,7 @@ textarea.form-control-lg {
     text-align: center !important;
   }
 }
-@media (min-width: 1620px) {
+@media (min-width: 1650px) {
   .float-xxxl-start {
     float: left !important;
   }
@@ -11021,9 +11021,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@media (min-width: 1620px) {
-  .container {
-    max-width: 1620px;
+@media (min-width: 1650px) {
+  .container,
+  .container-xl {
+    max-width: 1650px;
   }
 }
 
@@ -11071,7 +11072,7 @@ body:after {
     content: "xxl";
   }
 }
-@media (min-width: 1620px) {
+@media (min-width: 1650px) {
   body:after {
     content: "xxxl";
   }
@@ -11087,7 +11088,7 @@ h2,
   color: #2e2e51;
   text-align: center;
   letter-spacing: -0.06em;
-  margin: 10px auto;
+  margin: 20px auto 10px;
 }
 @media (min-width: 768px) {
   h1, .h1,
@@ -11108,6 +11109,15 @@ h2,
   }
 }
 @media (min-width: 1400px) {
+  h1, .h1,
+  h2,
+  .h2 {
+    margin: 30px auto 0;
+    font-size: 64px;
+    line-height: 72px;
+  }
+}
+@media (min-width: 1650px) {
   h1, .h1,
   h2,
   .h2 {
@@ -11203,7 +11213,7 @@ main.bg-hero p.lead {
 }
 
 header {
-  padding: 34px 0 0 0;
+  padding: 25px 0 0 0;
   pointer-events: none;
   max-height: 200px;
 }
@@ -11217,7 +11227,7 @@ header {
     padding: 50px 0 0 0;
   }
 }
-@media (min-width: 1620px) {
+@media (min-width: 1650px) {
   header {
     padding: 60px 0 0 0;
   }
@@ -11375,7 +11385,13 @@ section p.lead {
 }
 @media (min-width: 1400px) {
   section p.lead {
-    font-size: 28px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 1650px) {
+  section p.lead {
+    font-size: 26px;
     line-height: 36px;
   }
 }
@@ -11523,7 +11539,7 @@ form.contact select.form-select:invalid {
     transform: scale(0.95);
   }
 }
-@media (min-width: 1620px) {
+@media (min-width: 1650px) {
   .phone-holder {
     top: 0;
     transform: scale(1);

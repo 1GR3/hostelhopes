@@ -50,7 +50,7 @@ h2 {
   color: $indigo;
   text-align: center;
   letter-spacing: -0.06em;
-  margin: 10px auto;
+  margin: 20px auto 10px;
   @include media-breakpoint-up(md) {
     margin: 20px auto;
     font-size: 36px;
@@ -62,6 +62,11 @@ h2 {
     line-height: 110%;
   }
   @include media-breakpoint-up(xxl) {
+    margin: 30px auto 0;
+    font-size: 64px;
+    line-height: 72px;
+  }
+  @include media-breakpoint-up(xxxl) {
     margin: 30px auto 0;
     font-size: 72px;
     line-height: 80px;
@@ -152,7 +157,7 @@ main {
   }
 }
 header {
-  padding: 34px 0 0 0;
+  padding: 25px 0 0 0;
   pointer-events: none;
   max-height: 200px;
   @include media-breakpoint-up(md) {
@@ -316,7 +321,11 @@ section {
       line-height: 24px;
     }
     @include media-breakpoint-up(xxl) {
-      font-size: 28px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    @include media-breakpoint-up(xxxl) {
+      font-size: 26px;
       line-height: 36px;
     }
   }
