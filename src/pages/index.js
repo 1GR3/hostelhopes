@@ -18,22 +18,22 @@ const IndexPage = () => {
       </Helmet>
       <main>
         <Header landingpage scrollYProgress={scrollYProgress} />
-        <section className="container text-center">
+        <section className="container-fluid container-xl text-center">
           <div className="hero m-auto">
             <h1 className="text-white">
               Just focus on the good bits of your next adventure.
             </h1>
             <a
-              className="btn btn-light d-none d-md-inline-block"
+              className="btn btn-light d-none d-lg-inline-block"
               href="/hostels-connect"
             >
               Own a hostel? We can help you grow.
             </a>
           </div>
         </section>
-        <section className="container d-flex align-items-start align-items-md-center light">
-          <div className="row d-block d-md-none">
-            <div className="col text-center">
+        <section className="container-fluid container-xl d-flex justify-content-center align-items-start align-items-lg-center light">
+          <div className="row d-block d-lg-none">
+            <div className="col col-md-10 mx-auto text-center">
               <h2>Earn points. Hop more.</h2>
               <p className="lead">
                 Recommend hostels to your friends and earn points when they
@@ -42,7 +42,7 @@ const IndexPage = () => {
               </p>
             </div>
           </div>
-          <div className="row d-none d-md-flex">
+          <div className="row d-none d-lg-flex">
             <div className="col text-center">
               <h2>Earn points.</h2>
               <p className="lead">
@@ -60,18 +60,24 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="container d-flex align-items-center dark">
-          <div className="row d-block d-md-none">
-            <div className="col text-center">
+        <section className="container-fluid container-xl d-flex justify-content-center align-items-center dark">
+          <div className="row d-block d-lg-none">
+            <div className="col col-md-10 mx-auto text-center">
               <h2>Save trips. Share maps.</h2>
               <p className="lead">
                 Create maps marking your stops along the way like a playlist of
                 your favorite hostels. Share your maps with other hostel hoppers
                 and with your followers on social media!
               </p>
+              <a
+                className="btn btn-success d-lg-none"
+                href="/influencers-connect"
+              >
+                Make passive income sharing your travels
+              </a>
             </div>
           </div>
-          <div className="row d-none d-md-flex">
+          <div className="row d-none d-lg-flex">
             <div className="col text-center">
               <h2>Save trips.</h2>
               <p className="lead">
@@ -92,18 +98,21 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="container d-flex align-items-start align-items-md-center dark">
-          <div className="row d-block d-md-none">
-            <div className="col text-center">
+        <section className="container-fluid container-xl d-flex justify-content-center align-items-start align-items-lg-center dark">
+          <div className="row d-block d-lg-none">
+            <div className="col col-md-10 mx-auto text-center">
               <h2>Own a hostel? Get listed.</h2>
               <p className="lead">
                 Our rewards program allows users to travel more and stay longer
                 at your hostel. Hostel hop takes a lower deposit fee than hostel
                 world and booking.com
               </p>
+              <a className="btn btn-danger d-lg-none" href="/hostels-connect">
+                Own a hostel? We can help you grow!
+              </a>
             </div>
           </div>
-          <div className="row d-none d-md-flex">
+          <div className="row d-none d-lg-flex">
             <div className="col text-center">
               <h2>Own a hostel?</h2>
               <p className="lead">
