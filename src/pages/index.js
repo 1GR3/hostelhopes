@@ -24,7 +24,7 @@ const IndexPage = () => {
               Just focus on the good bits of your next adventure.
             </h1>
             <a
-              className="btn btn-light d-none d-lg-inline-block"
+              className="btn btn-light d-none d-md-inline-block"
               href="/hostels-connect"
             >
               Own a hostel? We can help you grow.
@@ -70,7 +70,7 @@ const IndexPage = () => {
                 and with your followers on social media!
               </p>
               <a
-                className="btn btn-success d-lg-none"
+                className="btn btn-success d-none d-md-inline-block d-lg-none"
                 href="/influencers-connect"
               >
                 Make passive income sharing your travels
@@ -108,7 +108,10 @@ const IndexPage = () => {
                 at your hostel. Hostel hop takes a lower deposit fee than hostel
                 world and booking.com
               </p>
-              <a className="btn btn-danger d-lg-none" href="/hostels-connect">
+              <a
+                className="btn btn-danger d-none d-md-inline-block d-lg-none"
+                href="/hostels-connect"
+              >
                 Own a hostel? We can help you grow!
               </a>
             </div>
