@@ -5,8 +5,8 @@ const Background = ({ scrollYProgress }) => {
   const gradientDefinition = [
     { color: "#27a7b8", position: 0 },
     { color: "#fff", position: 0.1 },
-    { color: "#fff", position: 0.6 },
-    { color: "#232220", position: 0.62 },
+    { color: "#fff", position: 0.55 },
+    { color: "#232220", position: 0.57 },
     { color: "#232220", position: 1 },
   ];
 
