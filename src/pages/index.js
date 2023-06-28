@@ -20,7 +20,7 @@ const IndexPage = () => {
         <Header landingpage scrollYProgress={scrollYProgress} />
         <section className="container-fluid container-xl text-center">
           <div className="hero m-auto">
-            <h1 className="text-white">
+            <h1 className="text-white mx-auto">
               Just focus on the good bits of your next adventure.
             </h1>
             <a
