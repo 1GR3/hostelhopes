@@ -13,10 +13,10 @@ export default function InfluencersConnect() {
       <div className="bg-white influencer">
         <section className="container text-center light">
           <Header light={true} />
-          <h1>
+          <h2>
             The freedom to travel <br />
             in the palm of your hand!
-          </h1>
+          </h2>
           <p className="connect">
             Are you an influencer looking to make a passive income sharing your
             travels? Send us a message below including your social media

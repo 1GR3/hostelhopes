@@ -13,9 +13,9 @@ export default function HostelsConnect() {
       <div className="bg-dark hostel">
         <section className="container text-center dark">
           <Header light={false} />
-          <h1>
+          <h2>
             Own a hostel? <br /> We can help you grow.
-          </h1>
+          </h2>
           <p className="connect">
             If you are a Hostel Owner looking to join the Hostel Hop platform,
             send us a message telling us a bit about your hostel, if you are
