@@ -726,7 +726,7 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-  --bs-gutter-x: 3rem;
+  --bs-gutter-x: 40px;
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -772,7 +772,7 @@ progress {
 }
 
 .row {
-  --bs-gutter-x: 3rem;
+  --bs-gutter-x: 40px;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -3385,7 +3385,7 @@ textarea.form-control-lg {
 }
 
 .row {
-  --bs-gutter-x: 3rem;
+  --bs-gutter-x: 40px;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -11026,6 +11026,7 @@ textarea.form-control-lg {
     max-width: 1620px;
   }
 }
+
 body {
   font-size: 22px;
   position: relative;
@@ -11086,25 +11087,58 @@ h2,
   color: #2e2e51;
   text-align: center;
   letter-spacing: -0.06em;
-  margin-top: 30px;
+  margin: 10px auto;
 }
 @media (min-width: 768px) {
   h1, .h1,
   h2,
   .h2 {
-    margin-top: 5px;
+    margin: 20px auto;
+    font-size: 36px;
+    line-height: 110%;
+  }
+}
+@media (min-width: 992px) {
+  h1, .h1,
+  h2,
+  .h2 {
+    margin: 0 auto 25px;
+    font-size: 40px;
+    line-height: 110%;
+  }
+}
+@media (min-width: 1400px) {
+  h1, .h1,
+  h2,
+  .h2 {
+    margin: 30px auto 0;
     font-size: 72px;
     line-height: 80px;
   }
 }
 
 h1, .h1 {
-  margin-bottom: 45px;
+  margin: 30 auto 0;
   font-size: 36px;
 }
 @media (min-width: 768px) {
   h1, .h1 {
-    margin-top: 5px;
+    margin: 15px auto;
+    font-size: 40px;
+    line-height: 110%;
+    max-width: 500px;
+  }
+}
+@media (min-width: 992px) {
+  h1, .h1 {
+    margin: 0 auto 30px;
+    font-size: 48px;
+    line-height: 110%;
+  }
+}
+@media (min-width: 1400px) {
+  h1, .h1 {
+    margin: 0 auto 45px;
     font-size: 72px;
     line-height: 80px;
   }
@@ -11121,9 +11155,15 @@ h1, .h1 {
 }
 @media (min-width: 768px) {
   .btn {
+    line-height: 17px;
+    padding: 14px 60px 15px;
+  }
+}
+@media (min-width: 1400px) {
+  .btn {
     font-size: 16px;
     line-height: 24px;
-    padding: 15px 35px;
+    padding: 17px 35px;
   }
 }
 .btn.btn-light {
@@ -11235,7 +11275,6 @@ section.dark .form-select {
 }
 section p.lead {
   font-family: "Outfit", sans-serif;
-  font-family: "Outfit";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -11243,31 +11282,64 @@ section p.lead {
   letter-spacing: -0.01em;
   text-rendering: geometricPrecision;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   section p.lead {
     color: #9393aa;
     font-family: "Lexend Deca";
     font-style: normal;
     font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1400px) {
+  section p.lead {
     font-size: 28px;
     line-height: 36px;
   }
 }
 
 p.connect {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 150%;
+  text-rendering: geometricPrecision;
   max-width: 912px;
-  margin: 0 auto 45px;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.01em;
+  color: #f4f5f5;
+  margin: 0 auto 30px;
+}
+@media (min-width: 768px) {
+  p.connect {
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+    margin: 0 auto 45px;
+  }
 }
 
 .influencer p.connect {
   max-width: 780px;
-  color: #9393aa;
+  color: #2e2e51;
+}
+@media (min-width: 768px) {
+  .influencer p.connect {
+    color: #9393aa;
+  }
 }
 
 form.contact {
-  max-width: 690px;
-  margin: auto;
+  padding: 0 10px;
+}
+@media (min-width: 768px) {
+  form.contact {
+    max-width: 690px;
+    margin: auto;
+  }
 }
 form.contact .row > * {
   padding-right: 10px;
@@ -11296,7 +11368,7 @@ form.contact select.form-select:invalid {
 
 #mobile-buttons {
   position: fixed;
-  bottom: 15px;
+  bottom: 20px;
   left: 0;
   right: 0;
   z-index: 50;
