@@ -85,7 +85,7 @@ const IndexPage = () => {
                 your favorite hostels.
               </p>
             </div>
-            <div className="col"></div>
+            <div className="col col-xxxl-3"></div>
             <div className="col text-center">
               <h2>Share maps.</h2>
               <p className="lead">
@@ -121,7 +121,7 @@ const IndexPage = () => {
                 at your hostel.
               </p>
             </div>
-            <div className="col"></div>
+            <div className="col col-xxxl-3"></div>
             <div className="col text-center">
               <h2>Get listed.</h2>
               <p className="lead">
