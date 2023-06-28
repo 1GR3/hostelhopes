@@ -315,19 +315,27 @@ p.connect {
   color: #f4f5f5;
   margin: 0 auto 30px;
   @include media-breakpoint-up(md) {
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: -0.01em;
+    margin: 0 auto 45px;
+    max-width: 745px;
+  }
+  @include media-breakpoint-up(xl) {
     font-family: "Lexend Deca";
     font-weight: 400;
     font-size: 22px;
     line-height: 40px;
     letter-spacing: -0.04em;
     margin: 0 auto 45px;
+    max-width: auto;
   }
 }
 .influencer {
   p.connect {
     max-width: 780px;
     color: $indigo;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       color: $secondary;
     }
   }

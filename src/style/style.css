@@ -11418,12 +11418,22 @@ p.connect {
 }
 @media (min-width: 768px) {
   p.connect {
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: -0.01em;
+    margin: 0 auto 45px;
+    max-width: 745px;
+  }
+}
+@media (min-width: 1200px) {
+  p.connect {
     font-family: "Lexend Deca";
     font-weight: 400;
     font-size: 22px;
     line-height: 40px;
     letter-spacing: -0.04em;
     margin: 0 auto 45px;
+    max-width: auto;
   }
 }
 
@@ -11431,7 +11441,7 @@ p.connect {
   max-width: 780px;
   color: #2e2e51;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .influencer p.connect {
     color: #9393aa;
   }
