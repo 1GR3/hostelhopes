@@ -57,24 +57,24 @@ const MobileButtons = ({ scrollYProgress }) => {
     };
   }, []);
 
-  const positionValues = ["0px", "75px", "75px", "130px"];
+  const positionValues = ["0px", "75px", "75px", "150px"];
   const opacityValues = [0, 1, 1, 0];
 
   const hostel1props = useSpring({
-    bottom: scrollYProgress.to([0, 0.29, 0.3], ["75px", "75px", "130px"]),
+    bottom: scrollYProgress.to([0, 0.29, 0.3], ["75px", "75px", "150px"]),
     opacity: scrollYProgress.to([0, 0.29, 0.3], [1, 1, 0]),
     config: config.slow,
   });
 
   const influProps = useSpring({
-    bottom: scrollYProgress.to([0.7, 0.71, 0.86, 0.87], positionValues),
-    opacity: scrollYProgress.to([0.7, 0.71, 0.86, 0.87], opacityValues),
+    bottom: scrollYProgress.to([0.54, 0.55, 0.8, 0.81], positionValues),
+    opacity: scrollYProgress.to([0.54, 0.55, 0.8, 0.81], opacityValues),
     config: config.slow,
   });
 
   const hostel2props = useSpring({
-    bottom: scrollYProgress.to([0.89, 0.9, 1, 1], positionValues),
-    opacity: scrollYProgress.to([0.89, 0.9, 1, 1], opacityValues),
+    bottom: scrollYProgress.to([0.84, 0.85, 1, 1], positionValues),
+    opacity: scrollYProgress.to([0.84, 0.85, 1, 1], opacityValues),
     config: config.slow,
   });
 
