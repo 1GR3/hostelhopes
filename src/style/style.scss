@@ -203,20 +203,41 @@ section {
   }
 }
 p.connect {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 150%;
+  text-rendering: geometricPrecision;
   max-width: 912px;
-  margin: 0 auto 45px;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.01em;
+  color: #f4f5f5;
+  margin: 0 auto 30px;
+  @include media-breakpoint-up(md) {
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+    margin: 0 auto 45px;
+  }
 }
 .influencer {
   p.connect {
     max-width: 780px;
-    color: $secondary;
+    color: $indigo;
+    @include media-breakpoint-up(md) {
+      color: $secondary;
+    }
   }
 }
 
 form.contact {
-  max-width: 690px;
-  margin: auto;
+  padding: 0 10px;
+  @include media-breakpoint-up(md) {
+    max-width: 690px;
+    margin: auto;
+  }
   .row > * {
     padding-right: 10px;
     padding-left: 10px;
