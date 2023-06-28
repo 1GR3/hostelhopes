@@ -50,18 +50,39 @@ h2 {
   color: $indigo;
   text-align: center;
   letter-spacing: -0.06em;
-  margin-top: 30px;
+  margin: 10px auto;
   @include media-breakpoint-up(md) {
-    margin-top: 5px;
+    margin: 20px auto;
+    font-size: 36px;
+    line-height: 110%;
+  }
+  @include media-breakpoint-up(lg) {
+    margin: 0 auto 25px;
+    font-size: 40px;
+    line-height: 110%;
+  }
+  @include media-breakpoint-up(xxl) {
+    margin: 30px auto 0;
     font-size: 72px;
     line-height: 80px;
   }
 }
 h1 {
-  margin-bottom: 45px;
+  margin: 30 auto 0;
   font-size: 36px;
   @include media-breakpoint-up(md) {
-    margin-top: 5px;
+    margin: 15px auto;
+    font-size: 40px;
+    line-height: 110%;
+    max-width: 500px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin: 0 auto 30px;
+    font-size: 48px;
+    line-height: 110%;
+  }
+  @include media-breakpoint-up(xxl) {
+    margin: 0 auto 45px;
     font-size: 72px;
     line-height: 80px;
   }
