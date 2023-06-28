@@ -22,6 +22,16 @@ $grid-breakpoints: (
   xxxl: 1620px,
 );
 
+$grid-gutter-width: 3rem;
+$gutters: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
 // 3. Include remainder of required Bootstrap stylesheets
 
 @import "../../node_modules/bootstrap/scss/variables";
