@@ -12,8 +12,8 @@ const Header = ({ landingpage, light = false, scrollYProgress }) => {
     { color: "#ffffff", position: 0 },
     { color: "#ffffff", position: 0.2 },
     { color: "#2e2e51", position: 0.21 },
-    { color: "#2e2e51", position: 0.73 },
-    { color: "#ffffff", position: 0.74 },
+    { color: "#2e2e51", position: 0.65 },
+    { color: "#ffffff", position: 0.66 },
     { color: "#ffffff", position: 1 },
   ];
   const interpolateGradient = (gradientDefinition) => {

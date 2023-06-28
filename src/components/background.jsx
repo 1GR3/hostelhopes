@@ -23,7 +23,7 @@ const Background = ({ scrollYProgress }) => {
 
   const blurForest = scrollYProgress.to([0.55, 0.75], [0, 15]);
   const opacityForest = scrollYProgress.to([0.75, 0.82], [1, 0]);
-  const topForest = scrollYProgress.to([0.3, 0.7], ["90%", "-50%"]);
+  const topForest = scrollYProgress.to([0.27, 0.69], ["100%", "-70%"]);
 
   const backgroundSpringProps = useSpring({
     background: interpolateGradient(gradientDefinition),
