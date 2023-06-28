@@ -19,7 +19,7 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1620px,
+  xxxl: 1650px,
 );
 
 $grid-gutter-width: 40px;
@@ -57,8 +57,9 @@ $gutters: (
 
 // 5. Add additional custom code here
 
-.container {
+.container,
+.container-xl {
   @include media-breakpoint-up(xxxl) {
-    max-width: 1620px;
+    max-width: 1650px;
   }
 }
