@@ -46,11 +46,11 @@ const MobileButtons = ({ scrollYProgress }) => {
 
   const isInverted = true;
 
-  const positionValues = ["0px", "65px", "65px", "130px"];
+  const positionValues = ["0px", "75px", "75px", "130px"];
   const opacityValues = [0, 1, 1, 0];
 
   const hostel1props = useSpring({
-    bottom: scrollYProgress.to([0, 0.29, 0.3], ["65px", "65px", "130px"]),
+    bottom: scrollYProgress.to([0, 0.29, 0.3], ["75px", "75px", "130px"]),
     opacity: scrollYProgress.to([0, 0.29, 0.3], [1, 1, 0]),
     config: config.slow,
   });
