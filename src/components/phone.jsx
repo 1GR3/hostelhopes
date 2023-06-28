@@ -3,10 +3,10 @@ import { useSpring, animated, config } from "@react-spring/web";
 
 const Phone = ({ scrollYProgress }) => {
   const phoneSize = scrollYProgress.interpolate([0, 0.14, 1], [142, 100, 100]);
-  const phonePosition = scrollYProgress.interpolate(
-    [0, 0.14, 1],
-    ["-28%", "0%", "0"]
-  );
+  // const phonePosition = scrollYProgress.interpolate(
+  //   [0, 0.14, 1],
+  //   ["-28%", "0%", "0"]
+  // );
   const backgroundColor = scrollYProgress.interpolate(
     [0, 0.55, 0.6],
     ["#2e2e51", "#2e2e51", "#fff"]
@@ -30,7 +30,7 @@ const Phone = ({ scrollYProgress }) => {
     transform: scrollYProgress.to(
       [0, 0.14, 1],
       [
-        "scale(142%) translateY(50%)",
+        "scale(143%) translateY(26%)",
         "scale(100%) translateY(0%)",
         "scale(100%) translateY(0%)",
       ]

@@ -11028,6 +11028,51 @@ textarea.form-control-lg {
   }
 }
 
+body:after {
+  content: "XS";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 4px;
+  background-color: rgba(244, 11, 0, 0.75);
+  color: white;
+  font-family: monospace;
+  font-size: 24px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+@media (min-width: 576px) {
+  body:after {
+    content: "SM";
+  }
+}
+@media (min-width: 768px) {
+  body:after {
+    content: "MD";
+  }
+}
+@media (min-width: 992px) {
+  body:after {
+    content: "LG";
+  }
+}
+@media (min-width: 1200px) {
+  body:after {
+    content: "XL";
+  }
+}
+@media (min-width: 1400px) {
+  body:after {
+    content: "xxl";
+  }
+}
+@media (min-width: 1650px) {
+  body:after {
+    content: "xxxl";
+  }
+}
+
 body {
   font-size: 22px;
   position: relative;
@@ -11509,19 +11554,19 @@ form.connect select.form-select:invalid {
     transform: scale(1);
   }
 }
-@media (max-height: 1024px) {
+@media (min-width: 600px) and (max-height: 1024px) {
   .phone-holder {
     top: 15%;
     transform: scale(0.9);
   }
 }
-@media (max-height: 850px) {
+@media (min-width: 600px) and (max-height: 850px) {
   .phone-holder {
     top: 30%;
     transform: scale(0.8);
   }
 }
-@media (max-height: 750px) {
+@media (min-width: 600px) and (max-height: 750px) {
   .phone-holder {
     top: 45%;
     transform: scale(0.7);
