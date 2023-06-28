@@ -7,16 +7,10 @@ const Phone = ({ scrollYProgress }) => {
     [0, 0.14, 1],
     ["-28%", "0%", "0"]
   );
-  const gradientSpringProps = useSpring({
-    background: scrollYProgress.to(
-      [0.52, 0.7, 0.75],
-      [
-        "linear-gradient(180deg, #2e2e51 0%, #2e2e51 100%, #fff 100%, #fff 100%)",
-        "linear-gradient(180deg, #2e2e51 0%, #2e2e51 0%, #fff 100%, #fff 100%)",
-        "linear-gradient(180deg, #2e2e51 0%, #2e2e51 0%, #fff 0%, #fff 100%)",
-      ]
-    ),
-  });
+  const backgroundColor = scrollYProgress.interpolate(
+    [0, 0.55, 0.6],
+    ["#2e2e51", "#2e2e51", "#fff"]
+  );
   const screenPositionX = scrollYProgress.to(
     [0, 0.14, 0.3, 0.59, 0.6, 0.89, 0.9, 1],
     ["7.5%", "0%", "0%", "0%", "50%", "50%", "100%", "100%"]
@@ -54,7 +48,7 @@ const Phone = ({ scrollYProgress }) => {
     <div className="phone-holder">
       <animated.div
         className="phone"
-        style={{ ...phoneProps, ...gradientSpringProps }}
+        style={{ ...phoneProps, backgroundColor }}
       >
         <animated.div className="screen" style={screenProps}>
           <animated.div
