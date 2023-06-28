@@ -6,10 +6,8 @@ import { useSpring, animated, config } from "@react-spring/web";
 const MobileButtons = ({ scrollYProgress }) => {
   const getOS = () => {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    console.log("User Agent:", userAgent);
 
     if (/android/i.test(userAgent)) {
-      console.log("Detected OS: Android");
       return {
         os: "android",
         button: (
@@ -23,7 +21,6 @@ const MobileButtons = ({ scrollYProgress }) => {
         ),
       };
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      console.log("Detected OS: iOS");
       return {
         os: "ios",
         button: (
@@ -38,13 +35,27 @@ const MobileButtons = ({ scrollYProgress }) => {
       };
     }
 
-    console.log("Detected OS: Unknown");
     return { os: "unknown", button: null };
   };
 
   const { os, button } = getOS();
 
-  const isInverted = true;
+  const [isInverted, setIsInverted] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY / window.innerHeight;
+      const bottomHalfReached = scrollPosition >= 1.15;
+
+      setIsInverted(!bottomHalfReached);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const positionValues = ["0px", "75px", "75px", "130px"];
   const opacityValues = [0, 1, 1, 0];
