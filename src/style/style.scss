@@ -96,9 +96,13 @@ h1 {
   box-shadow: 2px 4px 15px rgba(74, 87, 120, 0.2);
   border-radius: 30px;
   @include media-breakpoint-up(md) {
+    line-height: 17px;
+    padding: 14px 60px 15px;
+  }
+  @include media-breakpoint-up(xxl) {
     font-size: 16px;
     line-height: 24px;
-    padding: 15px 35px;
+    padding: 17px 35px;
   }
   &.btn-light {
     color: $indigo;

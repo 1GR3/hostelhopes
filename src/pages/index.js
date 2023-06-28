@@ -93,7 +93,8 @@ const IndexPage = () => {
                 followers on social media!
               </p>
               <a className="btn btn-success" href="/influencers-connect">
-                Make passive income sharing your travels
+                Make passive income&nbsp;
+                <br className="d-xxl-none" /> sharing your travels
               </a>
             </div>
           </div>
@@ -128,7 +129,9 @@ const IndexPage = () => {
                 booking.com
               </p>
               <a className="btn btn-danger" href="/hostels-connect">
-                Own a hostel? We can help you grow!
+                Own a hostel? &nbsp;
+                <br className="d-xxl-none" />
+                We can help you grow!
               </a>
             </div>
           </div>
