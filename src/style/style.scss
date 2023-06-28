@@ -159,6 +159,7 @@ header {
 }
 section {
   min-height: 100vh;
+  padding: 0 20px !important;
   &.light {
     color: $indigo;
     h1,
@@ -190,6 +191,8 @@ section {
     font-weight: 300;
     font-size: 15px;
     line-height: 150%;
+    letter-spacing: -0.01em;
+    text-rendering: geometricPrecision;
     @include media-breakpoint-up(md) {
       color: $secondary;
       font-family: "Lexend Deca";

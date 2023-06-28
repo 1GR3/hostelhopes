@@ -11206,6 +11206,7 @@ header .qr-code {
 
 section {
   min-height: 100vh;
+  padding: 0 20px !important;
 }
 section.light {
   color: #2e2e51;
@@ -11240,6 +11241,8 @@ section p.lead {
   font-weight: 300;
   font-size: 15px;
   line-height: 150%;
+  letter-spacing: -0.01em;
+  text-rendering: geometricPrecision;
 }
 @media (min-width: 768px) {
   section p.lead {
