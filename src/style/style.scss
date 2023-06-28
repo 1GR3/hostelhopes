@@ -381,6 +381,9 @@ form.connect {
       svg {
         fill: white;
       }
+      .googlePlay {
+        margin-top: -3px;
+      }
     }
   }
   .appleLogo {
@@ -396,6 +399,7 @@ form.connect {
     width: 100%;
   }
   .btn-store {
+    max-height: 60px;
     position: relative;
     z-index: 5;
   }

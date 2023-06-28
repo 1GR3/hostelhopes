@@ -11487,6 +11487,9 @@ form.connect select.form-select:invalid {
 #mobile-buttons.inverted .btn-store svg {
   fill: white;
 }
+#mobile-buttons.inverted .btn-store .googlePlay {
+  margin-top: -3px;
+}
 #mobile-buttons .appleLogo {
   margin-top: -7px;
   margin-right: 10px;
@@ -11500,6 +11503,7 @@ form.connect select.form-select:invalid {
   width: 100%;
 }
 #mobile-buttons .btn-store {
+  max-height: 60px;
   position: relative;
   z-index: 5;
 }
