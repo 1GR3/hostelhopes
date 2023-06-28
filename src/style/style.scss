@@ -161,7 +161,8 @@ header {
     transition: all 0.25s ease;
     transition-delay: 0;
     height: 140px;
-
+    z-index: 50;
+    position: relative;
     svg {
       width: 100px;
       padding: 10px;
@@ -172,7 +173,7 @@ header {
       opacity: 0;
       font-family: "Outfit";
       transition: opacity 0.25s ease 0s;
-
+      color: $indigo;
       .scan {
         font-style: normal;
         font-weight: 700;

@@ -11033,50 +11033,6 @@ body {
   position: relative;
   font-family: "Lexend Deca", sans-serif;
 }
-body:after {
-  content: "XS";
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  padding: 4px;
-  background-color: rgba(244, 11, 0, 0.75);
-  color: white;
-  font-family: monospace;
-  font-size: 24px;
-  text-transform: uppercase;
-  opacity: 0.85;
-}
-@media (min-width: 576px) {
-  body:after {
-    content: "SM";
-  }
-}
-@media (min-width: 768px) {
-  body:after {
-    content: "MD";
-  }
-}
-@media (min-width: 992px) {
-  body:after {
-    content: "LG";
-  }
-}
-@media (min-width: 1200px) {
-  body:after {
-    content: "XL";
-  }
-}
-@media (min-width: 1400px) {
-  body:after {
-    content: "xxl";
-  }
-}
-@media (min-width: 1650px) {
-  body:after {
-    content: "xxxl";
-  }
-}
 
 h1, .h1,
 h2,
@@ -11255,6 +11211,8 @@ header .qr-code {
   transition: all 0.25s ease;
   transition-delay: 0;
   height: 140px;
+  z-index: 50;
+  position: relative;
 }
 header .qr-code svg {
   width: 100px;
@@ -11265,6 +11223,7 @@ header .qr-code .details {
   opacity: 0;
   font-family: "Outfit";
   transition: opacity 0.25s ease 0s;
+  color: #2e2e51;
 }
 header .qr-code .details .scan {
   font-style: normal;
