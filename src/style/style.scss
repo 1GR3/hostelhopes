@@ -2,43 +2,13 @@
 
 @import "./_bootstrap.scss";
 
+// activate to see the breakpoints
+//@import "./_breakpoint-helper.scss";
+
 body {
   font-size: 22px;
   position: relative;
   font-family: "Lexend Deca", sans-serif;
-
-  &:after {
-    content: "XS";
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    padding: 4px;
-    background-color: rgba(244, 11, 0, 0.75);
-    color: white;
-    font-family: monospace;
-    font-size: 24px;
-    text-transform: uppercase;
-    opacity: 0.85;
-    @include media-breakpoint-up(sm) {
-      content: "SM";
-    }
-    @include media-breakpoint-up(md) {
-      content: "MD";
-    }
-    @include media-breakpoint-up(lg) {
-      content: "LG";
-    }
-    @include media-breakpoint-up(xl) {
-      content: "XL";
-    }
-    @include media-breakpoint-up(xxl) {
-      content: "xxl";
-    }
-    @include media-breakpoint-up(xxxl) {
-      content: "xxxl";
-    }
-  }
 }
 
 h1,
