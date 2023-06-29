@@ -42,12 +42,12 @@ h2 {
     line-height: 110%;
   }
   @include media-breakpoint-up(xxl) {
-    margin: 30px auto 0;
+    margin: 30px auto 25px;
     font-size: 64px;
     line-height: 72px;
   }
   @include media-breakpoint-up(xxxl) {
-    margin: 30px auto 0;
+    margin: 30px auto 30px;
     font-size: 72px;
     line-height: 80px;
   }
@@ -344,6 +344,7 @@ p.connect {
   color: #f4f5f5;
   margin: 0 auto 30px;
   @include media-breakpoint-up(md) {
+    padding-top: 5px;
     font-size: 18px;
     line-height: 180%;
     letter-spacing: -0.01em;
@@ -351,6 +352,7 @@ p.connect {
     max-width: 745px;
   }
   @include media-breakpoint-up(xl) {
+    padding-top: 10px;
     font-family: "Lexend Deca";
     font-weight: 400;
     font-size: 22px;
