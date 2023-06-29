@@ -20,7 +20,11 @@ const Phone = ({ scrollYProgress }) => {
   const hMD =
     window.innerWidth < 768 && windowHeight >= 768 && windowHeight <= 1080;
   const hLG = window.innerWidth < 768 && windowHeight > 1080;
-  const hDT = window.innerWidth >= 768 && windowHeight < 1080;
+  const hLTss = window.innerWidth >= 768 && windowHeight < 650;
+  const hLTs = window.innerWidth >= 768 && windowHeight < 750;
+  const hLT = window.innerWidth >= 768 && windowHeight < 850;
+  const hDT =
+    window.innerWidth >= 768 && windowHeight >= 800 && windowHeight < 900;
 
   const phoneSize = scrollYProgress.interpolate([0, 0.14, 1], [142, 100, 100]);
   const backgroundColor = scrollYProgress.interpolate(
@@ -63,14 +67,32 @@ const Phone = ({ scrollYProgress }) => {
             "scale(100%) translateY(0vh)",
             "scale(100%) translateY(0vh)",
           ]
+        : hLTss
+        ? [
+            "scale(140%) translateY(100vh)",
+            "scale(100%) translateY(0vh)",
+            "scale(100%) translateY(0vh)",
+          ]
+        : hLTs
+        ? [
+            "scale(140%) translateY(80vh)",
+            "scale(100%) translateY(0vh)",
+            "scale(100%) translateY(0vh)",
+          ]
+        : hLT
+        ? [
+            "scale(140%) translateY(65vh)",
+            "scale(100%) translateY(0vh)",
+            "scale(100%) translateY(0vh)",
+          ]
         : hDT
         ? [
-            "scale(160%) translateY(48vh)",
-            "scale(100%) translateY(30vh)",
-            "scale(100%) translateY(30vh)",
+            "scale(140%) translateY(62vh)",
+            "scale(100%) translateY(0vh)",
+            "scale(100%) translateY(0vh)",
           ]
         : [
-            "scale(160%) translateY(28vh)",
+            "scale(160%) translateY(50vh)",
             "scale(100%) translateY(0vh)",
             "scale(100%) translateY(0vh)",
           ]
