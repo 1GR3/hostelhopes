@@ -11073,6 +11073,17 @@ body:after {
   }
 }
 
+body,
+html {
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y proximity;
+  scroll-snap-stop: always;
+}
+body .snap,
+html .snap {
+  scroll-snap-align: start;
+}
+
 body {
   font-size: 22px;
   position: relative;

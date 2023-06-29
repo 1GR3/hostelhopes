@@ -31,7 +31,7 @@ const IndexPage = () => {
             </a>
           </div>
         </section>
-        <section className="container-fluid container-xl d-flex justify-content-center align-items-start align-items-lg-center light">
+        <section className="snap container-fluid container-xl d-flex justify-content-center align-items-start align-items-lg-center light">
           <div className="row d-block d-lg-none">
             <div className="col col-md-10 mx-auto text-center">
               <h2>Earn points. Hop more.</h2>
@@ -60,7 +60,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="container-fluid container-xl d-flex justify-content-center align-items-center dark">
+        <section className="snap container-fluid container-xl d-flex justify-content-center align-items-start align-items-lg-center dark">
           <div className="row d-block d-lg-none">
             <div className="col col-md-10 mx-auto text-center">
               <h2>Save trips. Share maps.</h2>
@@ -99,7 +99,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="container-fluid container-xl d-flex justify-content-center align-items-start align-items-lg-center dark">
+        <section className="snap container-fluid container-xl d-flex justify-content-center align-items-start align-items-lg-center dark">
           <div className="row d-block d-lg-none">
             <div className="col col-md-10 mx-auto text-center">
               <h2>Own a hostel? Get listed.</h2>
@@ -149,5 +149,3 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
-
-export const Head = () => <title>Home Page</title>;

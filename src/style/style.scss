@@ -4,6 +4,16 @@
 
 // activate to see the breakpoints
 @import "./_breakpoint-helper.scss";
+body,
+html {
+  //scroll-snap-type: proximity;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y proximity;
+  scroll-snap-stop: always;
+  .snap {
+    scroll-snap-align: start;
+  }
+}
 
 body {
   font-size: 22px;
