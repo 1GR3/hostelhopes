@@ -23,7 +23,9 @@ const Header = ({ landingpage, light = false, scrollYProgress }) => {
     );
   };
   return (
-    <header className={"" + (landingpage ? "container" : "")}>
+    <header
+      className={"" + (landingpage ? "container" : "position-relative mb-0")}
+    >
       <div className="row">
         <div className="col text-center text-lg-start">
           <a href="/">
