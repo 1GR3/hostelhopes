@@ -7,8 +7,8 @@
 body,
 html {
   //scroll-snap-type: proximity;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y proximity;
+  //scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
   scroll-snap-stop: always;
   .snap {
     scroll-snap-align: start;
@@ -53,7 +53,7 @@ h2 {
   }
 }
 h1 {
-  margin: 30 auto 0;
+  margin: 30px auto 0;
   font-size: 36px;
   @include media-breakpoint-up(md) {
     margin: 15px auto;
@@ -142,8 +142,17 @@ header {
   padding: 25px 0 0 0;
   pointer-events: none;
   max-height: 200px;
+  position: relative;
+  margin-bottom: -100px;
+
   @include media-breakpoint-up(md) {
     padding: 45px 0 0 0;
+  }
+  @include media-breakpoint-up(lg) {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0px;
   }
   @include media-breakpoint-up(xl) {
     padding: 50px 0 0 0;
@@ -257,9 +266,17 @@ header {
 }
 .hero {
   max-width: 350px;
+  padding-top: 90px;
   @include media-breakpoint-up(md) {
     max-width: 980px;
   }
+  @include media-breakpoint-up(lg) {
+    max-width: 980px;
+    padding-top: 200px;
+  }
+}
+.text-shadow {
+  text-shadow: 0 2px 32px rgba(0, 33, 22, 0.25), 0 2px 12px rgba(black, 0.2);
 }
 section {
   min-height: 100vh;

@@ -18,7 +18,7 @@ const IndexPage = () => {
       </Helmet>
       <main>
         <Header landingpage scrollYProgress={scrollYProgress} />
-        <section className="container-fluid container-xl text-center">
+        <section className="snap container-fluid container-xl text-center">
           <div className="hero m-auto">
             <h1 className="text-white mx-auto">
               Just focus on the good bits of your next adventure.
@@ -60,7 +60,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="snap container-fluid container-xl d-flex justify-content-center align-items-start align-items-lg-center dark">
+        <section className="snap container-fluid container-xl d-flex justify-content-center align-items-start align-items-lg-center dark text-shadow">
           <div className="row d-block d-lg-none">
             <div className="col col-md-10 mx-auto text-center">
               <h2>Save trips. Share maps.</h2>

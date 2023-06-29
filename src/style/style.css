@@ -11075,8 +11075,7 @@ body:after {
 
 body,
 html {
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
   scroll-snap-stop: always;
 }
 body .snap,
@@ -11140,7 +11139,7 @@ h2,
 }
 
 h1, .h1 {
-  margin: 30 auto 0;
+  margin: 30px auto 0;
   font-size: 36px;
 }
 @media (min-width: 768px) {
@@ -11232,10 +11231,20 @@ header {
   padding: 25px 0 0 0;
   pointer-events: none;
   max-height: 200px;
+  position: relative;
+  margin-bottom: -100px;
 }
 @media (min-width: 768px) {
   header {
     padding: 45px 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -11347,11 +11356,22 @@ header .qr-code:not(:hover) .details {
 
 .hero {
   max-width: 350px;
+  padding-top: 90px;
 }
 @media (min-width: 768px) {
   .hero {
     max-width: 980px;
   }
+}
+@media (min-width: 992px) {
+  .hero {
+    max-width: 980px;
+    padding-top: 200px;
+  }
+}
+
+.text-shadow {
+  text-shadow: 0 2px 32px rgba(0, 33, 22, 0.25), 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 section {
