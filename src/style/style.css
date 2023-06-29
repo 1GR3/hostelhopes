@@ -11361,6 +11361,7 @@ header .qr-code:not(:hover) .details {
 @media (min-width: 768px) {
   .hero {
     max-width: 980px;
+    padding-top: 120px;
   }
 }
 @media (min-width: 992px) {
@@ -11371,7 +11372,7 @@ header .qr-code:not(:hover) .details {
 }
 
 .text-shadow {
-  text-shadow: 0 2px 32px rgba(0, 33, 22, 0.25), 0 2px 12px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 6px 32px rgba(0, 33, 22, 0.5), 0 2px 12px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.15);
 }
 
 section {
@@ -11565,7 +11566,7 @@ form.connect select.form-select:invalid {
 }
 @media (min-width: 576px) {
   .phone-holder {
-    top: 0;
+    top: 20%;
     transform: scale(0.75);
   }
 }
@@ -11577,43 +11578,39 @@ form.connect select.form-select:invalid {
 }
 @media (min-width: 992px) {
   .phone-holder {
-    top: 0;
     transform: scale(0.85);
   }
 }
 @media (min-width: 1200px) {
   .phone-holder {
-    top: 0;
     transform: scale(0.9);
   }
 }
 @media (min-width: 1400px) {
   .phone-holder {
-    top: 0;
     transform: scale(0.95);
   }
 }
 @media (min-width: 1650px) {
   .phone-holder {
-    top: 0;
     transform: scale(1);
   }
 }
-@media (min-width: 600px) and (max-height: 1024px) {
+@media (min-width: 768px) and (max-height: 1024px) {
   .phone-holder {
     top: 15%;
     transform: scale(0.9);
   }
 }
-@media (min-width: 600px) and (max-height: 850px) {
+@media (min-width: 768px) and (max-height: 850px) {
   .phone-holder {
-    top: 30%;
+    top: 24%;
     transform: scale(0.8);
   }
 }
-@media (min-width: 600px) and (max-height: 750px) {
+@media (min-width: 768px) and (max-height: 750px) {
   .phone-holder {
-    top: 45%;
+    top: 32%;
     transform: scale(0.7);
   }
 }
