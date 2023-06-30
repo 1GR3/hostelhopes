@@ -6,7 +6,7 @@ const Background = ({ scrollYProgress }) => {
     { color: "#27a7b8", position: 0 },
     { color: "#fff", position: 0.1 },
     { color: "#fff", position: 0.55 },
-    { color: "#232220", position: 0.57 },
+    { color: "#232220", position: 0.555 },
     { color: "#232220", position: 1 },
   ];
 
@@ -22,8 +22,8 @@ const Background = ({ scrollYProgress }) => {
   const topHero = scrollYProgress.to([0.05, 0.3], ["0%", "-50%"]);
 
   const blurForest = scrollYProgress.to([0.55, 0.75], [0, 15]);
-  const opacityForest = scrollYProgress.to([0.75, 0.82], [1, 0]);
-  const topForest = scrollYProgress.to([0.27, 0.69], ["100%", "-70%"]);
+  const opacityForest = scrollYProgress.to([0.6, 0.75, 0.82], [0.8, 1, 0]);
+  const topForest = scrollYProgress.to([0.26, 0.68], ["95%", "-75%"]);
 
   const backgroundSpringProps = useSpring({
     background: interpolateGradient(gradientDefinition),
