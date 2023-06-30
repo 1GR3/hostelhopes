@@ -26,8 +26,8 @@ const Phone = ({ scrollYProgress }) => {
   const hDT =
     window.innerWidth >= 768 && windowHeight >= 800 && windowHeight < 900;
 
-  const phoneSize = scrollYProgress.interpolate([0, 0.14, 1], [142, 100, 100]);
-  const backgroundColor = scrollYProgress.interpolate(
+  const phoneSize = scrollYProgress.to([0, 0.14, 1], [142, 100, 100]);
+  const backgroundColor = scrollYProgress.to(
     [0, 0.55, 0.6],
     ["#2e2e51", "#2e2e51", "#fff"]
   );
@@ -51,50 +51,50 @@ const Phone = ({ scrollYProgress }) => {
       [0, 0.14, 1],
       hSM
         ? [
-            "scale(142%) translateY(33vh)",
-            "scale(100%) translateY(5vh)",
-            "scale(100%) translateY(5vh)",
+            "scale(142%) translateY(33%)",
+            "scale(100%) translateY(5%)",
+            "scale(100%) translateY(5%)",
           ]
         : hMD
         ? [
-            "scale(151%) translateY(35vh)",
-            "scale(100%) translateY(0vh)",
-            "scale(100%) translateY(0vh)",
+            "scale(151%) translateY(35%)",
+            "scale(100%) translateY(0%)",
+            "scale(100%) translateY(0%)",
           ]
         : hLG
         ? [
-            "scale(160%) translateY(30vh)",
-            "scale(100%) translateY(0vh)",
-            "scale(100%) translateY(0vh)",
+            "scale(160%) translateY(30%)",
+            "scale(100%) translateY(0%)",
+            "scale(100%) translateY(0%)",
           ]
         : hLTss
         ? [
-            "scale(140%) translateY(100vh)",
-            "scale(100%) translateY(0vh)",
-            "scale(100%) translateY(0vh)",
+            "scale(140%) translateY(100%)",
+            "scale(100%) translateY(0%)",
+            "scale(100%) translateY(0%)",
           ]
         : hLTs
         ? [
-            "scale(140%) translateY(80vh)",
-            "scale(100%) translateY(0vh)",
-            "scale(100%) translateY(0vh)",
+            "scale(140%) translateY(80%)",
+            "scale(100%) translateY(0%)",
+            "scale(100%) translateY(0%)",
           ]
         : hLT
         ? [
-            "scale(140%) translateY(65vh)",
-            "scale(100%) translateY(0vh)",
-            "scale(100%) translateY(0vh)",
+            "scale(140%) translateY(65%)",
+            "scale(100%) translateY(0%)",
+            "scale(100%) translateY(0%)",
           ]
         : hDT
         ? [
-            "scale(140%) translateY(62vh)",
-            "scale(100%) translateY(0vh)",
-            "scale(100%) translateY(0vh)",
+            "scale(140%) translateY(62%)",
+            "scale(100%) translateY(0%)",
+            "scale(100%) translateY(0%)",
           ]
         : [
-            "scale(160%) translateY(50vh)",
-            "scale(100%) translateY(0vh)",
-            "scale(100%) translateY(0vh)",
+            "scale(160%) translateY(50%)",
+            "scale(100%) translateY(0%)",
+            "scale(100%) translateY(0%)",
           ]
     ),
     config: config.slow,
