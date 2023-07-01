@@ -51,50 +51,50 @@ const Phone = ({ scrollYProgress }) => {
       [0, 0.14, 1],
       hSM
         ? [
-            "scale(142%) translateY(33%)",
-            "scale(100%) translateY(5%)",
-            "scale(100%) translateY(5%)",
+            "scale(142%) translate3d(0,33%,0)",
+            "scale(100%) translate3d(0,5%,0)",
+            "scale(100%) translate3d(0,5%,0)",
           ]
         : hMD
         ? [
-            "scale(151%) translateY(35%)",
-            "scale(100%) translateY(0%)",
-            "scale(100%) translateY(0%)",
+            "scale(151%) translate3d(0,35%,0)",
+            "scale(100%) translate3d(0,0%,0)",
+            "scale(100%) translate3d(0,0%,0)",
           ]
         : hLG
         ? [
-            "scale(160%) translateY(30%)",
-            "scale(100%) translateY(0%)",
-            "scale(100%) translateY(0%)",
+            "scale(160%) translate3d(0,30%,0)",
+            "scale(100%) translate3d(0,0%,0)",
+            "scale(100%) translate3d(0,0%,0)",
           ]
         : hLTss
         ? [
-            "scale(140%) translateY(100%)",
-            "scale(100%) translateY(0%)",
-            "scale(100%) translateY(0%)",
+            "scale(140%) translate3d(0,100%,0)",
+            "scale(100%) translate3d(0,0%,0)",
+            "scale(100%) translate3d(0,0%,0)",
           ]
         : hLTs
         ? [
-            "scale(140%) translateY(80%)",
-            "scale(100%) translateY(0%)",
-            "scale(100%) translateY(0%)",
+            "scale(140%) translate3d(0,80%,0)",
+            "scale(100%) translate3d(0,0%,0)",
+            "scale(100%) translate3d(0,0%,0)",
           ]
         : hLT
         ? [
-            "scale(140%) translateY(65%)",
-            "scale(100%) translateY(0%)",
-            "scale(100%) translateY(0%)",
+            "scale(140%) translate3d(0,65%,0)",
+            "scale(100%) translate3d(0,0%,0)",
+            "scale(100%) translate3d(0,0%,0)",
           ]
         : hDT
         ? [
-            "scale(140%) translateY(62%)",
-            "scale(100%) translateY(0%)",
-            "scale(100%) translateY(0%)",
+            "scale(140%) translate3d(0,62%,0)",
+            "scale(100%) translate3d(0,0%,0)",
+            "scale(100%) translate3d(0,0%,0)",
           ]
         : [
-            "scale(160%) translateY(50%)",
-            "scale(100%) translateY(0%)",
-            "scale(100%) translateY(0%)",
+            "scale(160%) translate3d(0,50%,0)",
+            "scale(100%) translate3d(0,0%,0)",
+            "scale(100%) translate3d(0,0%,0)",
           ]
     ),
     config: config.slow,
