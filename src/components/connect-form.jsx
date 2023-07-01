@@ -1,5 +1,55 @@
 import React from "react";
 
+function submitHostelForm(firstName, lastName, email, phone, hostelName, message) {
+  fetch('https://api-dev.hostel-hop.com/api/v1/hostel-contact-form', {
+    method: 'POST',
+    body: JSON.stringify({
+      // Add parameters here
+    }),
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+  })
+     .then((response) => response.json())
+     .then((data) => {
+        alert('Your submission was succesful! We will be in touch soon');
+     })
+     .catch((err) => {
+      console.log(err);
+      alert('There was an issue with your submission. Please try again later.');
+     });
+
+}
+
+function submitInfluencerForm(firstName, lastName, email, phone, socialNetwork, handle, message) {
+  fetch('https://api-dev.hostel-hop.com/api/v1/influencer-contact-form', {
+    method: 'POST',
+    body: JSON.stringify({
+      'first_name': firstName,
+      'last_name': lastName,
+      'email': email,
+      'phone': phone,
+      'social_network': socialNetwork,
+      'handle': handle,
+      'message': message,
+    }),
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+  })
+     .then((response) => response.json())
+     .then((data) => {
+        alert('Your submission was succesful! We will be in touch soon');
+     })
+     .catch((err) => {
+      console.log(err);
+      alert('There was an issue with your submission. Please try again later.');
+     });
+
+}
+
 const ConnectForm = ({ hostel }) => {
   const difference = hostel ? (
     // Content for hostel
@@ -106,6 +156,7 @@ const ConnectForm = ({ hostel }) => {
           <button
             type="submit"
             className={"btn btn-" + (hostel ? "danger" : "success")}
+            onClick={hostel ? submitHostelForm : submitInfluencerForm}
           >
             Submit
           </button>
