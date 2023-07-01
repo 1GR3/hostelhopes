@@ -2,7 +2,13 @@ import * as React from "react";
 import { useSpring, animated, config } from "@react-spring/web";
 
 const Phone = ({ scrollYProgress }) => {
-  const [windowHeight, setWindowHeight] = React.useState(window.innerHeight);
+  const isSSR = typeof window === "undefined"
+
+  const height = isSSR ? 0 : window.innerHeight;
+  const width = isSSR ? 0 : window.innerWidth;
+
+  const [windowHeight, setWindowHeight] = React.useState(height);
+  const [windowWidth, _] = React.useState(width);
 
   React.useEffect(() => {
     const handleResize = () => {
@@ -16,15 +22,16 @@ const Phone = ({ scrollYProgress }) => {
     };
   }, []);
 
-  const hSM = window.innerWidth < 768 && windowHeight < 768;
+
+  const hSM = windowWidth < 768 && windowHeight < 768;
   const hMD =
-    window.innerWidth < 768 && windowHeight >= 768 && windowHeight <= 1080;
-  const hLG = window.innerWidth < 768 && windowHeight > 1080;
-  const hLTss = window.innerWidth >= 768 && windowHeight < 650;
-  const hLTs = window.innerWidth >= 768 && windowHeight < 750;
-  const hLT = window.innerWidth >= 768 && windowHeight < 850;
+    windowWidth < 768 && windowHeight >= 768 && windowHeight <= 1080;
+  const hLG = windowWidth < 768 && windowHeight > 1080;
+  const hLTss = windowWidth >= 768 && windowHeight < 650;
+  const hLTs = windowWidth >= 768 && windowHeight < 750;
+  const hLT = windowWidth >= 768 && windowHeight < 850;
   const hDT =
-    window.innerWidth >= 768 && windowHeight >= 800 && windowHeight < 900;
+    windowWidth >= 768 && windowHeight >= 800 && windowHeight < 900;
 
   const phoneSize = scrollYProgress.to([0, 0.14, 1], [142, 100, 100]);
   const backgroundColor = scrollYProgress.to(

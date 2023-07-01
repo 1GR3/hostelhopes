@@ -2,7 +2,11 @@ import * as React from "react";
 
 const AppRedirect = () => {
   React.useEffect(() => {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    let userAgent = "";
+    if( typeof window !== `undefined` ){
+       userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    }
+   
     if (/android/i.test(userAgent)) {
       // Redirect to Google Play
       window.location.href =

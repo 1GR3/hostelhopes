@@ -5,7 +5,11 @@ import { useSpring, animated, config } from "@react-spring/web";
 
 const MobileButtons = ({ scrollYProgress }) => {
   const getOS = () => {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    let userAgent = "";
+    if( typeof window !== `undefined` ){
+       userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    }
+   
 
     if (/android/i.test(userAgent)) {
       return {
