@@ -15,6 +15,25 @@ const IndexPage = () => {
       <Helmet>
         <title>Hostel Hop</title>
         <meta name="description" content="hostelhop" />
+
+        <meta property="og:title" content="Hostel Hop" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://hostelhop.fly.dev/logo.svg"
+        />
+        <meta property="og:url" content="https://hostelhop.fly.dev/" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          property="og:description"
+          content="Discover amazing hostels around the world and plan your next adventure."
+        />
+        <meta property="og:site_name" content="Hostel Hop" />
+        <meta name="twitter:image:alt" content="Alt text for image" />
+
+        <meta property="fb:app_id" content="your_app_id" />
+        <meta name="twitter:site" content="@website-username" />
       </Helmet>
       <main>
         <Header landingpage scrollYProgress={scrollYProgress} />
