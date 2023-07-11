@@ -1,50 +1,84 @@
 import React from "react";
 
-function submitHostelForm(firstName, lastName, email, phone, hostelName, message) {
-  fetch('https://api-dev.hostel-hop.com/api/v1/hostel-contact-form', {
+function submitHostelForm(e) {
+  e.preventDefault();
+  const firstName = document.getElementById('firstName').value;
+  const lastName = document.getElementById('lastName').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const hostelName = document.getElementById('hostelName').value;
+  const message = document.getElementById('message').value;
+
+  if(!firstName || !lastName || !email || !phone || !hostelName|| !message) {
+    alert('Please fill out all fields');
+    return;
+  }
+
+  const json = {
+    'firstName': firstName,
+    'lastName': lastName,
+    'email': email,
+    'phone': phone,
+    'hostelName': hostelName,
+    'message': message,
+  };
+
+  fetch(`https://${process.env.GATSBY_API_HOST}/api/v1/common/hostel-contact-form`, {
     method: 'POST',
-    body: JSON.stringify({
-      // Add parameters here
-    }),
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-    },
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(json),
   })
-     .then((response) => response.json())
+     .then((response)=> {
+      response.json()
+    })
      .then((data) => {
         alert('Your submission was succesful! We will be in touch soon');
      })
      .catch((err) => {
-      console.log(err);
       alert('There was an issue with your submission. Please try again later.');
-     });
+  });
 
 }
 
-function submitInfluencerForm(firstName, lastName, email, phone, socialNetwork, handle, message) {
-  fetch('https://api-dev.hostel-hop.com/api/v1/influencer-contact-form', {
+
+
+function submitInfluencerForm(e) {
+  e.preventDefault();
+  const firstName = document.getElementById('firstName').value;
+  const lastName = document.getElementById('lastName').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const socialNetwork = document.getElementById('socialNetwork').value;
+  const handle = document.getElementById('handle').value;
+  const message = document.getElementById('message').value;
+
+  if(!firstName || !lastName || !email || !phone || !socialNetwork || !handle || !message) {
+    alert('Please fill out all fields');
+    return;
+  }
+
+  const json = {
+    'firstName': firstName,
+    'lastName': lastName,
+    'email': email,
+    'phone': phone,
+    'socialNetwork': socialNetwork,
+    'handle': handle,
+    'message': message,
+  };
+
+  fetch(`https://${process.env.GATSBY_API_HOST}/api/v1/common/influencer-contact-form`, {
     method: 'POST',
-    body: JSON.stringify({
-      'first_name': firstName,
-      'last_name': lastName,
-      'email': email,
-      'phone': phone,
-      'social_network': socialNetwork,
-      'handle': handle,
-      'message': message,
-    }),
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-    },
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(json),
   })
-     .then((response) => response.json())
+     .then((response)=> {
+      response.json()
+    })
      .then((data) => {
         alert('Your submission was succesful! We will be in touch soon');
      })
      .catch((err) => {
-      console.log(err);
       alert('There was an issue with your submission. Please try again later.');
      });
 
@@ -70,6 +104,7 @@ const ConnectForm = ({ hostel }) => {
       <div className="col-12 col-md-6 mb-3">
         <select
           className="form-select"
+          id="socialNetwork"
           aria-label="Select social network"
           required
         >
