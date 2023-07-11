@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "H4J9UC9344.com.hostelHop.hostelHopMobile",
+                "paths": [ "NOT /map/", "/map/*"]
+            },
+            {
+                "appID": "H4J9UC9344.com.hostelHop.hostelHopMobile.dev",
+                "paths": [ "NOT /map/", "/map/*"]
+            }
+        ]
+    }
+}

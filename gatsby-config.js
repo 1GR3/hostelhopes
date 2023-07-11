@@ -56,5 +56,9 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-well-known`,
+      options: {},
+    }
   ],
 };
