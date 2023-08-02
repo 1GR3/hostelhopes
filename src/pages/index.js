@@ -20,9 +20,9 @@ const IndexPage = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://hostelhop.fly.dev/logo.svg"
+          content="https://hostel-hop.com/logo.svg"
         />
-        <meta property="og:url" content="https://hostelhop.fly.dev/" />
+        <meta property="og:url" content="https://hostel-hop.com/" />
         <meta name="twitter:card" content="summary_large_image" />
 
         <meta
@@ -44,7 +44,7 @@ const IndexPage = () => {
             </h1>
             <a
               className="btn btn-light d-none d-md-inline-block"
-              href="/hostels-connect"
+              href="https://hostel-hop.com/hostels-connect/"
             >
               Own a hostel? We can help you grow.
             </a>
@@ -90,7 +90,7 @@ const IndexPage = () => {
               </p>
               <a
                 className="btn btn-success d-none d-md-inline-block d-lg-none"
-                href="/influencers-connect"
+                href="https://hostel-hop.com/influencers-connect/"
               >
                 Make passive income sharing your travels
               </a>
@@ -111,7 +111,7 @@ const IndexPage = () => {
                 Share your maps with other hostel hoppers and with your
                 followers on social media!
               </p>
-              <a className="btn btn-success" href="/influencers-connect">
+              <a className="btn btn-success" href="https://hostel-hop.com/influencers-connect/">
                 Make passive income&nbsp;
                 <br className="d-xxl-none" /> sharing your travels
               </a>
@@ -129,7 +129,7 @@ const IndexPage = () => {
               </p>
               <a
                 className="btn btn-danger d-none d-md-inline-block d-lg-none"
-                href="/hostels-connect"
+                href="https://hostel-hop.com/hostels-connect/"
               >
                 Own a hostel? We can help you grow!
               </a>
@@ -150,7 +150,7 @@ const IndexPage = () => {
                 Hostel hop takes a lower deposit fee than hostel world and
                 booking.com
               </p>
-              <a className="btn btn-danger" href="/hostels-connect">
+              <a className="btn btn-danger" href="https://hostel-hop.com/hostels-connect/">
                 Own a hostel? &nbsp;
                 <br className="d-xxl-none" />
                 We can help you grow!
