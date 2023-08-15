@@ -58,9 +58,9 @@ const Phone = ({ scrollYProgress }) => {
       [0, 0.14, 1],
       hSM
         ? [
-            "scale(142%) translate3d(0,33%,0)",
-            "scale(100%) translate3d(0,5%,0)",
-            "scale(100%) translate3d(0,5%,0)",
+            "scale(110%) translate3d(0,33%,0)",
+            "scale(90%) translate3d(0,5%,0)",
+            "scale(90%) translate3d(0,5%,0)",
           ]
         : hMD
         ? [
