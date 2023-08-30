@@ -138,6 +138,9 @@ main {
       color: white;
     }
   }
+  &.bg-indigo {
+    background-color: $indigo;
+  }
 }
 header {
   padding: 25px 0 0 0;
@@ -580,5 +583,11 @@ form.connect {
       box-shadow: inset 0 10px 5px 5px white;
       //webkit-backface-visibility: hidden;
     }
+  }
+}
+
+.body-text {
+  h1, h2, h3, h4, h5, h6, p {
+    text-align: left;
   }
 }

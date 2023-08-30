@@ -1,0 +1,5 @@
+name: hostelhop
+dev_dependencies:
+  sass: ^1.66.1
+environment:
+  sdk: ^3.1.0
