@@ -6,6 +6,7 @@ import Background from "../components/background";
 import MobileButtons from "../components/mobile-buttons";
 import { useScroll, animated } from "@react-spring/web";
 import "../style/style.css";
+import { Analytics } from '@vercel/analytics/react';
 
 const IndexPage = () => {
   const { scrollYProgress } = useScroll();
@@ -163,6 +164,7 @@ const IndexPage = () => {
       <Phone scrollYProgress={scrollYProgress} />
 
       <Background scrollYProgress={scrollYProgress} />
+      <Analytics />
     </>
   );
 };
