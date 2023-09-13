@@ -14,21 +14,22 @@ const IndexPage = () => {
   return (
     <>
       <Helmet>
-        <title>Hostel Hop</title>
+        <title>Hostel Hop: Save 25% in booking fees when you list your hostel on Hostel Hop!</title>
+        <link rel="canonical" href="https://www.hostelhop.io/" />
         <meta name="description" content="hostelhop" />
 
         <meta property="og:title" content="Hostel Hop" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://hostelhop.io/logo.svg"
+          content="https://www.hostelhop.io/logo.svg"
         />
-        <meta property="og:url" content="https://hostelhop.io/" />
+        <meta property="og:url" content="https://www.hostelhop.io/" />
         <meta name="twitter:card" content="summary_large_image" />
 
         <meta
           property="og:description"
-          content="Discover amazing hostels around the world and plan your next adventure."
+          content="Discover the best hostels worldwide with Hostel Hop! Explore budget-friendly accommodations, travel tips, and unforgettable backpacking experiences. Start your adventure today!"
         />
         <meta property="og:site_name" content="Hostel Hop" />
         <meta name="twitter:image:alt" content="Alt text for image" />
@@ -91,7 +92,7 @@ const IndexPage = () => {
               </p>
               <a
                 className="btn btn-success d-none d-md-inline-block d-lg-none"
-                href="https://hostelhop.io/influencers-connect/"
+                href="https://www.hostelhop.io/influencers-connect/"
               >
                 Make passive income sharing your travels
               </a>
@@ -112,7 +113,7 @@ const IndexPage = () => {
                 Share your maps with other hostel hoppers and with your
                 followers on social media!
               </p>
-              <a className="btn btn-success" href="https://hostelhop.io/influencers-connect/">
+              <a className="btn btn-success" href="https://www.hostelhop.io/influencers-connect/">
                 Make passive income&nbsp;
                 <br className="d-xxl-none" /> sharing your travels
               </a>
