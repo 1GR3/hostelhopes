@@ -11,7 +11,7 @@ module.exports = {
     title: `hostelhop`,
     description: `Just focus on the good bits of your next adventure.`,
     image: `./images/hostelhop.png`,
-    siteUrl: `https://www.hostelhop.io`,
+    siteUrl: `https://hostelhop.io`,
   },
   plugins: [
     "gatsby-plugin-sass",
