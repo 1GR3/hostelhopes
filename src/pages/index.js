@@ -12,6 +12,7 @@ const IndexPage = () => {
   const { scrollYProgress } = useScroll();
 
   return (
+    
     <>
       <Helmet>
         <title>Hostel Hop: Save 25% in booking fees when you list your hostel on Hostel Hop!</title>
