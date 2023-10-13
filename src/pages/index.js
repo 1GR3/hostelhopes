@@ -12,7 +12,6 @@ const IndexPage = () => {
   const { scrollYProgress } = useScroll();
 
   return (
-    
     <>
       <Helmet>
         <title>Hostel Hop: Save 25% in booking fees when you list your hostel on Hostel Hop!</title>
@@ -47,7 +46,7 @@ const IndexPage = () => {
             </h1>
             <a
               className="btn btn-light d-none d-md-inline-block"
-              href="https://admin.hostel-hop.com/#/login/"
+              href="https://admin.hostelhop.io/#/login/"
             >
               Own a hostel? We can help you grow.
             </a>
@@ -132,7 +131,7 @@ const IndexPage = () => {
               </p>
               <a
                 className="btn btn-danger d-none d-md-inline-block d-lg-none"
-                href="https://admin.hostel-hop.com/#/login/"
+                href="https://admin.hostelhop.io/#/login/"
               >
                 Own a hostel? We can help you grow!
               </a>
@@ -153,7 +152,7 @@ const IndexPage = () => {
                 Hostel hop takes a lower deposit fee than hostel world and
                 booking.com
               </p>
-              <a className="btn btn-danger" href="https://admin.hostel-hop.com/#/login/">
+              <a className="btn btn-danger" href="https://admin.hostelhop.io/#/login/">
                 Own a hostel? &nbsp;
                 <br className="d-xxl-none" />
                 We can help you grow!
@@ -164,7 +163,6 @@ const IndexPage = () => {
       </main>
       <MobileButtons scrollYProgress={scrollYProgress} />
       <Phone scrollYProgress={scrollYProgress} />
-
       <Background scrollYProgress={scrollYProgress} />
       <Analytics />
     </>
