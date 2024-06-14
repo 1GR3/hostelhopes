@@ -7,16 +7,17 @@ exports.onRenderBody = ({
   setPostBodyComponents,
 }) => {
   setHeadComponents([
-    <link as="script" rel="preload" href="/scripts/preloader.js" />,
+    <link as="script" rel="preload" href="./scripts/preloader.js" />,
+    <base key="base" href={`${__PATH_PREFIX__}/`} />,
     <noscript>
-      <link rel="stylesheet" href="/styles/noscript.css" />
+      <link rel="stylesheet" href="./styles/noscript.css" />
     </noscript>,
   ]);
   setPreBodyComponents([
     <div id="preloader">
       {/* Optional: */}
       <img
-        src="/images/loader.gif"
+        src="./images/loader.gif"
         alt="logo"
         style={{ height: "calc(3.23625vw + 77.86408px)" }}
       />
@@ -25,5 +26,5 @@ exports.onRenderBody = ({
   setBodyAttributes({
     className: "preloader_active",
   });
-  setPostBodyComponents([<script src="/scripts/preloader.js" />]);
+  setPostBodyComponents([<script src="./scripts/preloader.js" />]);
 };

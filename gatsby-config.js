@@ -7,11 +7,12 @@ require("dotenv").config({
 
 
 module.exports = {
+  pathPrefix: `/clients/hostelhop/`,
   siteMetadata: {
     title: `hostelhop`,
     description: `Just focus on the good bits of your next adventure.`,
     image: `./images/hostelhop.png`,
-    siteUrl: `https://hostelhop.io`,
+    siteUrl: `https://gregurec.info`,
   },
   plugins: [
     "gatsby-plugin-sass",
