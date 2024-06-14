@@ -36,7 +36,7 @@ const Header = ({ landingpage, light = false, scrollYProgress }) => {
             )}
           </a>
         </div>
-        {/* <div className="col text-end d-none d-lg-block">
+        <div className="col text-end d-none d-lg-block">
           <div className="qr-code">
             <QRcode className="qr" />
             <div className="details">
@@ -70,7 +70,7 @@ const Header = ({ landingpage, light = false, scrollYProgress }) => {
               </a>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </header>
   );
